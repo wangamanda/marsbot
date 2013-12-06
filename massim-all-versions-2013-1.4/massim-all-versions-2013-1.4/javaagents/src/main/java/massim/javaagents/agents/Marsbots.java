@@ -3,6 +3,7 @@ package massim.javaagents.agents;
 import eis.iilang.Action;
 import eis.iilang.Percept;
 import massim.javaagents.Agent;
+import massim.javaagents.agents.MarsUtil;
 
 public class Marsbots extends Agent{
 
