@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE conf SYSTEM "helpers/2011/config.dtd">
+
+<conf>
+	&sim-server;
+	<match>
+		&simulation1;
+		&simulation2;
+		&simulation3;
+	</match>
+	
+	<manual-mode>
+		<match team1="HactarV2" team2="Sorena"/>
+		<match team1="HactarV2" team2="Python-DTU"/>
+		<match team1="Python-DTU" team2="Sorena"/>
+	</manual-mode>
+	
+	<accounts>
+		&actionclassmap;
+		
+		&Python-DTU;
+		&HactarV2;
+		&Sorena;
+	</accounts>
+</conf>
+

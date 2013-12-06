@@ -1,0 +1,65 @@
+<!ENTITY d3lp0r SYSTEM "accounts-d3lp0r.xml">
+<!ENTITY HactarV2 SYSTEM "accounts-HactarV2.xml">
+<!ENTITY HempelsSofa SYSTEM "accounts-HempelsSofa.xml">
+<!ENTITY Nargel SYSTEM "accounts-Nargel.xml">
+<!ENTITY Python-DTU SYSTEM "accounts-Python-DTU.xml">
+<!ENTITY Savior SYSTEM "accounts-Savior.xml">
+<!ENTITY Simurgh SYSTEM "accounts-Simurgh.xml">
+<!ENTITY Sorena SYSTEM "accounts-Sorena.xml">
+<!ENTITY TUB SYSTEM "accounts-TUB.xml">
+<!ENTITY UCDBogtrotters SYSTEM "accounts-UCDBogtrotters.xml">
+<!ENTITY teamAB SYSTEM "accounts-AB.xml">
+<!ENTITY teamA SYSTEM "accounts-A.xml">
+<!ENTITY teamB SYSTEM "accounts-B.xml">
+
+<!ENTITY simulation1 SYSTEM "sim1.xml">
+<!ENTITY simulation2 SYSTEM "sim2.xml">
+<!ENTITY simulation3 SYSTEM "sim3.xml">
+
+<!ENTITY actionclassmap SYSTEM "actionclassmap.xml">
+<!ENTITY sim-server SYSTEM "sim-server.xml">
+
+<!ENTITY actions SYSTEM "sim-actions.xml">
+<!ENTITY roles SYSTEM "sim-roles.xml">
+<!ENTITY achievements SYSTEM "sim-achievements.xml">
+<!ENTITY agents SYSTEM "sim-agents.xml">
+
+<!ATTLIST conf
+	backuppath CDATA "backup"
+	launch-sync-type CDATA "key"
+	reportpath CDATA "./backup/"
+	time-to-launch CDATA "10000"
+	tournamentmode CDATA "2"
+	tournamentname CDATA "Mars2011"
+	>
+	
+<!ATTLIST simulation 
+	configurationclass CDATA "massim.competition2011.GraphSimulationConfiguration"
+	rmixmlobsserverhost CDATA "localhost"
+	rmixmlobsserverport CDATA "1099"
+	rmixmlobserver CDATA "massim.competition2011.GraphSimulationRMIXMLDocumentObserver"
+	simulationclass CDATA "massim.competition2011.GraphSimulation"
+	xmlstatisticsobserver CDATA "massim.competition2011.GraphSimulationXMLStatisticsObserver"
+	visualisationobserver CDATA "massim.competition2011.GraphSimulationVisualizationObserver"
+	visualisationobserver-outputpath CDATA "/home/massim/www/webapps/massim/output"
+	rmixmlobserverweb CDATA "massim.competition2011.GraphSimulationRMIXMLDocumentObserverWebInterface"
+	xmlobserver CDATA "massim.competition2011.GraphSimulationXMLObserver"
+	xmlobserverpath CDATA "./backup/xmls"
+	>
+	
+<!ATTLIST configuration
+	xmlns:meta CDATA "http://www.tu-clausthal.de/"
+	maxNumberOfSteps CDATA "750"
+	numberOfAgents CDATA "20"
+	numberOfTeams CDATA "2"
+	agentsPerTeam CDATA "1"
+	gridWidth CDATA "15"
+	gridHeight CDATA "15"
+	cellWidth CDATA "100"
+	minNodeWeight CDATA "1"
+	maxNodeWeight CDATA "10"
+	minEdgeCost CDATA "1"
+	maxEdgeCost CDATA "10"
+	nodeWeighting CDATA "0"
+	mapGenerator CDATA "GraphGeneratorTriangulationBalanced"
+	>

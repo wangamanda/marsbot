@@ -1,0 +1,35 @@
+SHORT VERSION?
+
+LONG VERSION
+
+1. INSTALL EIS
+
+svn co https://apleis.svn.sourceforge.net/svnroot/apleis/trunk/eis-0.3/apleis apleis 
+got to the folder that contains the pom.xml
+mvn install
+
+2. INSTALL EISMASSIM
+
+go to the folder that contains the pom.xml
+mvn install
+
+3. INSTALL APLTK
+
+svn co https://apltk.svn.sourceforge.net/svnroot/apltk/trunk/apltk/
+got to the folder that contains the pom.xml
+mvn install
+
+4. PACKAGE JAVAAGENTS
+
+go to the folder that contains the pom.xml
+mvn package
+
+5. COPY DEPENDENCIES
+
+mvn dependency:copy-dependencies
+
+6. RUN
+
+java -jar target/javaagent-*.jar
+
+7. ADAPTING CONFIGURATION FILES

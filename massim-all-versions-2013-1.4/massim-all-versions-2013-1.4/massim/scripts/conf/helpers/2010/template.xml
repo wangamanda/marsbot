@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE conf SYSTEM "config.dtd">
+<!-- launch-sync-type = timer or key-->
+<conf backuppath="backup" launch-sync-type="key" reportpath="./backup/" time-to-launch="10000" tournamentmode="0" tournamentname="GridSimulation">
+<simulation-server><network-agent backlog="10" port="12300"/></simulation-server>
+<match>
+<simulation configurationclass="massim.competition2010.GridSimulationConfigurationHandCrafted" file-simulationlog="./backup/" id="demo1" rmiobserver="massim.competition2010.GridSimulationRMIObservers" rmixmlobserver="massim.competition2010.GridSimulationRMIXMLDocumentObserver" rmixmlobserverweb="massim.competition2010.GridSimulationRMIXMLDocumentObserverWebInterface" rmixmlobsserverhost="localhost" rmixmlobsserverport="1099" simulationclass="massim.competition2010.GridSimulation" visualisationobserver="massim.competition2010.GridSimulationVisualizationObserver" xmlobserver="massim.competition2010.GridSimulationXMLObserver" xmlobserverpath="./backup/" xmlstatisticsobserver="massim.competition2010.GridSimulationXMLStatisticsObserver">
+<configuration xmlns:meta="http://www.tu-clausthal.de/" agentSpeed="1" agentWeight="-200" cowAttractedWeight="10" cowPrivateField="3" cowScareWeight="-25" cowSight="5" cowSpeed="1" emptyWeight="3" epsilon="3" htaccess="0" lineOfSight="8" maxNumberOfSteps="1000" numberOfAgents="40" numberOfCows="144" numberOfFences="8" numberOfObstacles="692" obstacleWeight="-4" sizex="80" sizey="80">
+</configuration>
+</simulation>
+</match>
+&accounts;
+</conf>

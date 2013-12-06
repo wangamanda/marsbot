@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE conf SYSTEM "helpers/2012/config.dtd">
+
+<conf>
+	&sim-server;
+	<match>
+		&simulation1;
+		&simulation2;
+		&simulation3;
+	</match>
+        <manual-mode>
+<match team1="AiWYX" team2="PGIM"/>
+<match team1="AiWYX" team2="Streett"/>
+<match team1="PGIM" team2="Streett"/>       	
+       	</manual-mode>	
+	<accounts>
+		&actionclassmap;
+		&teamAiWYX;
+		&teamStreett;
+		&teamPGIM;
+	</accounts>
+</conf>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE conf SYSTEM "helpers/2010/config.dtd"><!-- launch-sync-type = timer or key--><conf backuppath="backup" launch-sync-type="key" reportpath="./backup/" time-to-launch="10000" tournamentmode="0" tournamentname="GridSimulation">
+<simulation-server><network-agent backlog="10" port="12300"/></simulation-server>
+<match>
+<simulation configurationclass="massim.competition2010.GridSimulationConfigurationHandCrafted" file-simulationlog="./backup/" id="test" rmiobserver="massim.competition2010.GridSimulationRMIObservers" rmixmlobserver="massim.competition2010.GridSimulationRMIXMLDocumentObserver" rmixmlobserverweb="massim.competition2010.GridSimulationRMIXMLDocumentObserverWebInterface" rmixmlobsserverhost="localhost" rmixmlobsserverport="1099" simulationclass="massim.competition2010.GridSimulation" visualisationobserver="massim.competition2010.GridSimulationVisualizationObserver" xmlobserver="massim.competition2010.GridSimulationXMLObserver" xmlobserverpath="./backup/" xmlstatisticsobserver="massim.competition2010.GridSimulationXMLStatisticsObserver">
+<configuration xmlns:meta="http://www.tu-clausthal.de/" agentSpeed="1" agentWeight="-200" cowAttractedWeight="10" cowPrivateField="3" cowScareWeight="-25" cowSight="5" cowSpeed="1" emptyWeight="3" epsilon="3" htaccess="0" lineOfSight="8" maxNumberOfSteps="1000" numberOfAgents="40" numberOfCows="4" numberOfFences="2" numberOfObstacles="76" obstacleWeight="-4" sizex="20" sizey="20">
+<array item0="0" item1="0" item10="0" item11="0" item12="0" item13="0" item14="0" item15="0" item16="0" item17="0" item18="0" item19="0" item2="0" item20="1" item21="1" item22="2" item23="2" item24="3" item25="3" item26="4" item27="4" item28="5" item29="5" item3="0" item30="6" item31="6" item32="7" item33="7" item34="8" item35="8" item36="9" item37="9" item38="10" item39="10" item4="0" item40="11" item41="11" item42="12" item43="12" item44="13" item45="13" item46="14" item47="14" item48="15" item49="15" item5="0" item50="16" item51="16" item52="17" item53="17" item54="18" item55="18" item56="19" item57="19" item58="19" item59="19" item6="0" item60="19" item61="19" item62="19" item63="19" item64="19" item65="19" item66="19" item67="19" item68="19" item69="19" item7="0" item70="19" item71="19" item72="19" item73="19" item74="19" item75="19" item8="0" item9="0" meta:length="76" meta:name="obstaclePositionX"/>
+<array item0="0" item1="1" item10="10" item11="11" item12="12" item13="13" item14="14" item15="15" item16="16" item17="17" item18="18" item19="19" item2="2" item20="0" item21="19" item22="0" item23="19" item24="0" item25="19" item26="0" item27="19" item28="0" item29="19" item3="3" item30="0" item31="19" item32="0" item33="19" item34="0" item35="19" item36="0" item37="19" item38="0" item39="19" item4="4" item40="0" item41="19" item42="0" item43="19" item44="0" item45="19" item46="0" item47="19" item48="0" item49="19" item5="5" item50="0" item51="19" item52="0" item53="19" item54="0" item55="19" item56="0" item57="1" item58="2" item59="3" item6="6" item60="4" item61="5" item62="6" item63="7" item64="8" item65="9" item66="10" item67="11" item68="12" item69="13" item7="7" item70="14" item71="15" item72="16" item73="17" item74="18" item75="19" item8="8" item9="9" meta:length="76" meta:name="obstaclePositionY"/>
+<array item0="1" item1="1" item10="3" item11="3" item12="3" item13="3" item14="3" item15="4" item16="4" item17="4" item18="4" item19="4" item2="1" item20="15" item21="15" item22="15" item23="15" item24="15" item25="16" item26="16" item27="16" item28="16" item29="16" item3="1" item30="17" item31="17" item32="17" item33="17" item34="17" item35="18" item36="18" item37="18" item38="18" item39="18" item4="1" item5="2" item6="2" item7="2" item8="2" item9="2" meta:length="40" meta:name="agentPositionX"/>
+<array item0="1" item1="2" item10="1" item11="2" item12="3" item13="4" item14="5" item15="1" item16="2" item17="3" item18="4" item19="5" item2="3" item20="14" item21="15" item22="16" item23="17" item24="18" item25="14" item26="15" item27="16" item28="17" item29="18" item3="4" item30="14" item31="15" item32="16" item33="17" item34="18" item35="14" item36="15" item37="16" item38="17" item39="18" item4="5" item5="1" item6="2" item7="3" item8="4" item9="5" meta:length="40" meta:name="agentPositionY"/>
+<array item0="1" item1="4" meta:length="2" meta:name="stable1X"/>
+<array item0="15" item1="18" meta:length="2" meta:name="stable1Y"/>
+<array item0="15" item1="18" meta:length="2" meta:name="stable2X"/>
+<array item0="1" item1="4" meta:length="2" meta:name="stable2Y"/>
+<array item0="9" item1="9" item2="10" item3="10" meta:length="4" meta:name="cowPositionX"/>
+<array item0="8" item1="9" item2="8" item3="9" meta:length="4" meta:name="cowPositionY"/>
+<array item0="14" item1="5" meta:length="2" meta:name="switchX"/>
+<array item0="1" item1="18" meta:length="2" meta:name="switchY"/>
+<array item0="18" item1="18" meta:length="2" meta:name="fenceLength"/>
+<array item0="down" item1="up" meta:length="2" meta:name="fenceDirections"/>
+</configuration>
+<agents>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+</agents>
+</simulation>
+</match>
+<accounts xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/accounts.xml">
+	<actionclassmap name="Grid">
+		<actionclass class="massim.competition2010.GridSimulationAgentAction" id="action"/>
+		<actionclass class="massim.framework.InvalidAction" id="invalid"/>
+	</actionclassmap>
+	<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a1" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a2" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a3" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a4" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a5" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a6" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a7" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a8" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a9" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a10" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a11" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a12" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a13" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a14" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a15" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a16" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a17" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a18" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a19" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a20" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+
+	<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b1" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b2" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b3" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b4" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b5" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b6" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b7" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b8" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b9" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b10" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b11" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b12" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b13" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b14" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b15" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b16" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b17" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b18" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b19" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b20" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+
+</accounts>
+
+
+&accounts;
+</conf>

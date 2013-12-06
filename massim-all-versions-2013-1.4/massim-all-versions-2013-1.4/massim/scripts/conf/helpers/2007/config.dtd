@@ -1,0 +1,7 @@
+<!ENTITY accounts SYSTEM "accounts.xml">
+
+<!ENTITY sim1 SYSTEM "2007-simulation1.xml">
+<!ENTITY sim2 SYSTEM "2007-simulation2.xml">
+
+<!ENTITY teamA SYSTEM "teamA.xml">
+<!ENTITY teamB SYSTEM "teamB.xml">

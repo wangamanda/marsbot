@@ -1,0 +1,9 @@
+<accounts>
+	<actionclassmap name="Grid">
+		<actionclass class="massim.competition2009.GridSimulationAgentAction" id="action"/>
+		<actionclass class="massim.framework.InvalidAction" id="invalid"/>
+	</actionclassmap>
+	&teamA;
+	&teamB;
+</accounts>
+

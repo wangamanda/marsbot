@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE conf SYSTEM "helpers/2009/config.dtd">
+<!-- launch-sync-type = timer or key -->
+<conf backuppath="backup" launch-sync-type="key" reportpath="./" time-to-launch="2000" tournamentmode="0" tournamentname="GridSimulation">
+<simulation-server><network-agent backlog="10" port="12300"/></simulation-server>
+<match>
+&demosim1;
+&demosim2;
+&demosim3;
+&demosim4;
+</match>
+&accounts;
+</conf>

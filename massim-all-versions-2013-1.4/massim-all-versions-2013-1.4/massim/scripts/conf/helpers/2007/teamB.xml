@@ -1,0 +1,6 @@
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2007.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b1"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2007.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b2"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2007.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b3"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2007.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b4"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2007.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b5"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2007.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b6"/>

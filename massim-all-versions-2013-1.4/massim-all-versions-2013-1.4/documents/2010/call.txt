@@ -1,0 +1,134 @@
+=================== Call for Participation ====================
+
+           Multi-Agent Programming Contest 2010
+
+             http://www.multiagentcontest.org
+
+===============================================================
+
+Organizers:
+  Tristan Behrens (Clausthal University of Technology)
+  JŸrgen Dix (Clausthal University of Technology)
+  Jomi HŸbner (Federal University of Santa Catarina)
+  Michael Kšster (Clausthal University of Technology)
+  
+Steering Committee:
+  Mehdi Dastani (Utrecht University)
+  JŸrgen Dix (Clausthal University of Technology)
+  Peter Novak (Czech Technical University)
+
+
+
+1. Aims and Scope
+
+This competition is an attempt to stimulate research in the area
+of multi-agent system development and programming by
+1. identifying key problems,
+2. collecting suitable benchmarks, and 
+3. gathering test cases which require and enforce coordinated action
+that can serve as milestones for testing multi-agent programming
+languages, platforms and tools.
+
+
+
+2. Short Scenario Description
+
+The contest scenario consists of developing a multi-agent system to 
+solve a cooperative task in a dynamic environment. The environment 
+is a grid-like world in which virtual cows are moving around 
+collectively in one or more herds exhibiting a swarm-like behavior. 
+There are two corrals, each belongs to one of the two agent teams. 
+The teams of agents compete to control the behavior of animals and 
+lead them to their own corral. The winning agent team is the one 
+that scores highest. A detailed scenario description of the scenario 
+will be available in time.  
+
+
+
+3. Participation Requirements
+
+The participation in this contest consists of these parts:
+
+1. Declaring the intent to participate by registering to
+the mailing list.
+
+2. Submission of the description of analysis, design and
+implementation of a multi-agent system for the above application.
+Thus registering to the contest officially.
+
+3. Participation in the contest tournament by taking part on the 
+final tournament.
+
+4. Submitting the source-code of your application right after 
+the tournament.
+
+
+
+4. Important Dates
+
+Stating your intent to 
+participate:			  now
+
+Publication of the software:	  January 2010
+
+Submission of the description 
+and registration to the contest:  July 2009
+
+Notification:                     after submission
+
+Camera-Ready of the description:  after notification
+
+Testing phase:			  July - September 2010
+
+Competition:                      September 2010
+
+Winner announcement:              after competition
+
+
+
+4. Details
+
+4.1 Intention to Participate
+
+Please announce your intention to attend the contest by
+subscribing to the mailing list. Participants and all interested 
+colleagues are invited to subscribe to the mailing list 
+     agentcontest2010 [at] in.tu-clausthal.de
+
+All the important details and announcements including scenario and communication
+protocol specifications as well as software release announcements and
+bug reports will be announced and discussed via this list.
+
+To subscribe, send an e-mail to 
+          agentcontest2010-subscribe [at] in.tu-clausthal.de 
+with the subject "subscribe". The confirmation request
+and welcome message will be sent to you shortly afterwards. Please
+follow the instructions in the automatic mailing list replies.
+
+
+4.2 Packages
+
+The packages that we will publish include: 1. the protocol description
+that defines the communication scheme between agents and our server, 2.
+the scenario description that defines the environment, 3. the MASSim server, 
+4. the scenario itself, 5. template-agents implemented in Java, and 6. an EIS.
+
+
+4.3 Submissions of the Short Descriptions
+
+We intend to handle the submissions of the short system-descriptions via EasyChair. 
+We also aim at publishing in the CLIMA (@ECAI) post-proceedings (still in a planning
+phase). We will provide details in time.
+
+
+4.4 Scenario
+
+The scenario will be *almost the same* as in 2010. The only thing that we are
+going to adapt is the scoring schema (more details later). But if we 
+discover further adaptations that would make the scenario more interesting
+from a research-point-of-view, we could adapt as well.
+
+4.5 Source Codes Obligation
+
+Note that the submission of the source-codes is obligatory in 2010.
+

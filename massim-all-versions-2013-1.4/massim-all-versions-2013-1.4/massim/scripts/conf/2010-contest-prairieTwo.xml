@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE conf SYSTEM "helpers/2010/config.dtd"><!-- launch-sync-type = timer or key--><conf backuppath="backup" launch-sync-type="key" reportpath="./backup/" time-to-launch="10000" tournamentmode="0" tournamentname="GridSimulation">
+<simulation-server><network-agent backlog="10" port="12300"/></simulation-server>
+<match>
+<simulation configurationclass="massim.competition2010.GridSimulationConfigurationHandCrafted" file-simulationlog="./backup/" id="prairieTwo" rmiobserver="massim.competition2010.GridSimulationRMIObservers" rmixmlobserver="massim.competition2010.GridSimulationRMIXMLDocumentObserver" rmixmlobserverweb="massim.competition2010.GridSimulationRMIXMLDocumentObserverWebInterface" rmixmlobsserverhost="localhost" rmixmlobsserverport="1099" simulationclass="massim.competition2010.GridSimulation" visualisationobserver="massim.competition2010.GridSimulationVisualizationObserver" xmlobserver="massim.competition2010.GridSimulationXMLObserver" xmlobserverpath="./backup/" xmlstatisticsobserver="massim.competition2010.GridSimulationXMLStatisticsObserver">
+<configuration xmlns:meta="http://www.tu-clausthal.de/" agentSpeed="1" agentWeight="-200" cowAttractedWeight="10" cowPrivateField="3" cowScareWeight="-25" cowSight="5" cowSpeed="1" emptyWeight="3" epsilon="3" htaccess="0" lineOfSight="8" maxNumberOfSteps="1500" numberOfAgents="40" numberOfCows="66" numberOfFences="21" numberOfObstacles="399" obstacleWeight="-4" sizex="61" sizey="61">
+<array item0="0" item1="0" item10="0" item100="10" item101="10" item102="10" item103="10" item104="10" item105="10" item106="10" item107="10" item108="10" item109="10" item11="0" item110="11" item111="11" item112="11" item113="11" item114="11" item115="12" item116="12" item117="12" item118="13" item119="13" item12="0" item120="13" item121="13" item122="13" item123="13" item124="14" item125="14" item126="14" item127="15" item128="15" item129="15" item13="0" item130="16" item131="16" item132="16" item133="17" item134="17" item135="17" item136="18" item137="18" item138="18" item139="19" item14="0" item140="19" item141="19" item142="20" item143="20" item144="20" item145="20" item146="20" item147="20" item148="20" item149="20" item15="0" item150="20" item151="20" item152="20" item153="20" item154="20" item155="20" item156="20" item157="20" item158="20" item159="20" item16="0" item160="20" item161="20" item162="20" item163="20" item164="20" item165="21" item166="21" item167="21" item168="21" item169="21" item17="0" item170="22" item171="22" item172="23" item173="23" item174="24" item175="24" item176="25" item177="25" item178="26" item179="26" item18="0" item180="27" item181="27" item182="28" item183="28" item184="29" item185="29" item186="29" item187="30" item188="30" item189="30" item19="0" item190="30" item191="30" item192="30" item193="30" item194="30" item195="30" item196="30" item197="30" item198="30" item199="30" item2="0" item20="0" item200="30" item201="30" item202="30" item203="30" item204="30" item205="30" item206="30" item207="30" item208="30" item209="30" item21="0" item210="30" item211="30" item212="31" item213="31" item214="31" item215="32" item216="32" item217="33" item218="33" item219="34" item22="0" item220="34" item221="35" item222="35" item223="36" item224="36" item225="37" item226="37" item227="38" item228="38" item229="39" item23="0" item230="39" item231="39" item232="39" item233="39" item234="40" item235="40" item236="40" item237="40" item238="40" item239="40" item24="0" item240="40" item241="40" item242="40" item243="40" item244="40" item245="40" item246="40" item247="40" item248="40" item249="40" item25="0" item250="40" item251="40" item252="40" item253="40" item254="40" item255="40" item256="40" item257="41" item258="41" item259="41" item26="0" item260="42" item261="42" item262="42" item263="43" item264="43" item265="43" item266="44" item267="44" item268="44" item269="45" item27="0" item270="45" item271="45" item272="46" item273="46" item274="46" item275="47" item276="47" item277="47" item278="47" item279="47" item28="0" item280="47" item281="48" item282="48" item283="48" item284="49" item285="49" item286="49" item287="49" item288="49" item289="50" item29="0" item290="50" item291="50" item292="50" item293="50" item294="50" item295="50" item296="50" item297="50" item298="50" item299="50" item3="0" item30="0" item300="50" item301="50" item302="50" item303="50" item304="50" item305="50" item306="50" item307="50" item308="50" item309="50" item31="0" item310="51" item311="51" item312="51" item313="52" item314="52" item315="52" item316="53" item317="53" item318="53" item319="54" item32="0" item320="54" item321="54" item322="55" item323="55" item324="55" item325="56" item326="56" item327="56" item328="57" item329="57" item33="0" item330="57" item331="58" item332="58" item333="58" item334="59" item335="59" item336="59" item337="59" item338="60" item339="60" item34="0" item340="60" item341="60" item342="60" item343="60" item344="60" item345="60" item346="60" item347="60" item348="60" item349="60" item35="0" item350="60" item351="60" item352="60" item353="60" item354="60" item355="60" item356="60" item357="60" item358="60" item359="60" item36="0" item360="60" item361="60" item362="60" item363="60" item364="60" item365="60" item366="60" item367="60" item368="60" item369="60" item37="0" item370="60" item371="60" item372="60" item373="60" item374="60" item375="60" item376="60" item377="60" item378="60" item379="60" item38="0" item380="60" item381="60" item382="60" item383="60" item384="60" item385="60" item386="60" item387="60" item388="60" item389="60" item39="0" item390="60" item391="60" item392="60" item393="60" item394="60" item395="60" item396="60" item397="60" item398="60" item4="0" item40="0" item41="0" item42="0" item43="0" item44="0" item45="0" item46="0" item47="0" item48="0" item49="0" item5="0" item50="0" item51="0" item52="0" item53="0" item54="0" item55="0" item56="0" item57="0" item58="0" item59="0" item6="0" item60="0" item61="1" item62="1" item63="1" item64="1" item65="2" item66="2" item67="2" item68="3" item69="3" item7="0" item70="3" item71="4" item72="4" item73="4" item74="5" item75="5" item76="5" item77="6" item78="6" item79="6" item8="0" item80="7" item81="7" item82="7" item83="8" item84="8" item85="8" item86="9" item87="9" item88="9" item89="10" item9="0" item90="10" item91="10" item92="10" item93="10" item94="10" item95="10" item96="10" item97="10" item98="10" item99="10" meta:length="399" meta:name="obstaclePositionX"/>
+<array item0="0" item1="1" item10="10" item100="39" item101="40" item102="41" item103="42" item104="43" item105="44" item106="45" item107="46" item108="47" item109="60" item11="11" item110="0" item111="20" item112="30" item113="47" item114="60" item115="0" item116="47" item117="60" item118="0" item119="47" item12="12" item120="48" item121="49" item122="50" item123="60" item124="0" item125="50" item126="60" item127="0" item128="50" item129="60" item13="13" item130="0" item131="50" item132="60" item133="0" item134="50" item135="60" item136="0" item137="50" item138="60" item139="0" item14="14" item140="50" item141="60" item142="0" item143="1" item144="2" item145="3" item146="4" item147="5" item148="6" item149="7" item15="15" item150="8" item151="9" item152="10" item153="11" item154="12" item155="13" item156="14" item157="15" item158="16" item159="17" item16="16" item160="18" item161="19" item162="20" item163="30" item164="60" item165="0" item166="10" item167="20" item168="30" item169="60" item17="17" item170="0" item171="60" item172="0" item173="60" item174="0" item175="60" item176="0" item177="60" item178="0" item179="60" item18="18" item180="0" item181="60" item182="0" item183="60" item184="0" item185="50" item186="60" item187="0" item188="10" item189="20" item19="19" item190="30" item191="31" item192="32" item193="33" item194="34" item195="35" item196="36" item197="37" item198="38" item199="39" item2="2" item20="20" item200="40" item201="41" item202="42" item203="43" item204="44" item205="45" item206="46" item207="47" item208="48" item209="49" item21="21" item210="50" item211="60" item212="0" item213="50" item214="60" item215="0" item216="60" item217="0" item218="60" item219="0" item22="22" item220="60" item221="0" item222="60" item223="0" item224="60" item225="0" item226="60" item227="0" item228="60" item229="0" item23="23" item230="10" item231="20" item232="30" item233="60" item234="0" item235="1" item236="2" item237="3" item238="4" item239="5" item24="24" item240="6" item241="7" item242="8" item243="9" item244="10" item245="11" item246="12" item247="13" item248="14" item249="15" item25="25" item250="16" item251="17" item252="18" item253="19" item254="20" item255="30" item256="60" item257="0" item258="50" item259="60" item26="26" item260="0" item261="50" item262="60" item263="0" item264="50" item265="60" item266="0" item267="50" item268="60" item269="0" item27="27" item270="50" item271="60" item272="0" item273="50" item274="60" item275="0" item276="47" item277="48" item278="49" item279="50" item28="28" item280="60" item281="0" item282="47" item283="60" item284="0" item285="20" item286="30" item287="47" item288="60" item289="0" item29="29" item290="20" item291="30" item292="31" item293="32" item294="33" item295="34" item296="35" item297="36" item298="37" item299="38" item3="3" item30="30" item300="39" item301="40" item302="41" item303="42" item304="43" item305="44" item306="45" item307="46" item308="47" item309="60" item31="31" item310="0" item311="20" item312="60" item313="0" item314="20" item315="60" item316="0" item317="20" item318="60" item319="0" item32="32" item320="20" item321="60" item322="0" item323="20" item324="60" item325="0" item326="20" item327="60" item328="0" item329="20" item33="33" item330="60" item331="0" item332="20" item333="60" item334="0" item335="20" item336="30" item337="60" item338="0" item339="1" item34="34" item340="2" item341="3" item342="4" item343="5" item344="6" item345="7" item346="8" item347="9" item348="10" item349="11" item35="35" item350="12" item351="13" item352="14" item353="15" item354="16" item355="17" item356="18" item357="19" item358="20" item359="21" item36="36" item360="22" item361="23" item362="24" item363="25" item364="26" item365="27" item366="28" item367="29" item368="30" item369="31" item37="37" item370="32" item371="33" item372="34" item373="35" item374="36" item375="37" item376="38" item377="39" item378="40" item379="41" item38="38" item380="42" item381="43" item382="44" item383="45" item384="46" item385="47" item386="48" item387="49" item388="50" item389="51" item39="39" item390="52" item391="53" item392="54" item393="55" item394="56" item395="57" item396="58" item397="59" item398="60" item4="4" item40="40" item41="41" item42="42" item43="43" item44="44" item45="45" item46="46" item47="47" item48="48" item49="49" item5="5" item50="50" item51="51" item52="52" item53="53" item54="54" item55="55" item56="56" item57="57" item58="58" item59="59" item6="6" item60="60" item61="0" item62="20" item63="30" item64="60" item65="0" item66="20" item67="60" item68="0" item69="20" item7="7" item70="60" item71="0" item72="20" item73="60" item74="0" item75="20" item76="60" item77="0" item78="20" item79="60" item8="8" item80="0" item81="20" item82="60" item83="0" item84="20" item85="60" item86="0" item87="20" item88="60" item89="0" item9="9" item90="20" item91="30" item92="31" item93="32" item94="33" item95="34" item96="35" item97="36" item98="37" item99="38" meta:length="399" meta:name="obstaclePositionY"/>
+<array item0="35" item1="35" item10="45" item11="45" item12="45" item13="45" item14="46" item15="55" item16="55" item17="55" item18="55" item19="55" item2="35" item20="5" item21="5" item22="5" item23="5" item24="5" item25="14" item26="15" item27="15" item28="15" item29="15" item3="35" item30="15" item31="15" item32="15" item33="15" item34="16" item35="25" item36="25" item37="25" item38="25" item39="25" item4="35" item5="44" item6="45" item7="45" item8="45" item9="45" meta:length="40" meta:name="agentPositionX"/>
+<array item0="5" item1="25" item10="45" item11="54" item12="55" item13="56" item14="55" item15="5" item16="15" item17="25" item18="35" item19="45" item2="35" item20="5" item21="15" item22="25" item23="35" item24="45" item25="55" item26="5" item27="15" item28="25" item29="35" item3="45" item30="45" item31="54" item32="55" item33="56" item34="55" item35="5" item36="25" item37="35" item38="45" item39="55" item4="55" item5="55" item6="5" item7="15" item8="25" item9="35" meta:length="40" meta:name="agentPositionY"/>
+<array item0="48" item1="59" meta:length="2" meta:name="stable1X"/>
+<array item0="48" item1="59" meta:length="2" meta:name="stable1Y"/>
+<array item0="1" item1="12" meta:length="2" meta:name="stable2X"/>
+<array item0="48" item1="59" meta:length="2" meta:name="stable2Y"/>
+<array item0="4" item1="5" item10="15" item11="15" item12="15" item13="16" item14="16" item15="16" item16="22" item17="22" item18="22" item19="24" item2="5" item20="24" item21="25" item22="25" item23="25" item24="25" item25="25" item26="25" item27="25" item28="26" item29="26" item3="6" item30="28" item31="28" item32="28" item33="32" item34="32" item35="32" item36="34" item37="34" item38="35" item39="35" item4="14" item40="35" item41="35" item42="35" item43="35" item44="35" item45="36" item46="36" item47="38" item48="38" item49="38" item5="14" item50="44" item51="44" item52="44" item53="45" item54="45" item55="45" item56="45" item57="45" item58="45" item59="46" item6="14" item60="46" item61="46" item62="54" item63="55" item64="55" item65="56" item7="15" item8="15" item9="15" meta:length="66" meta:name="cowPositionX"/>
+<array item0="45" item1="44" item10="16" item11="44" item12="46" item13="5" item14="15" item15="45" item16="12" item17="15" item18="18" item19="5" item2="46" item20="25" item21="4" item22="6" item23="12" item24="15" item25="18" item26="24" item27="26" item28="5" item29="25" item3="45" item30="12" item31="15" item32="18" item33="12" item34="15" item35="18" item36="5" item37="25" item38="4" item39="6" item4="5" item40="12" item41="15" item42="18" item43="24" item44="26" item45="5" item46="25" item47="12" item48="15" item49="18" item5="15" item50="5" item51="15" item52="45" item53="4" item54="6" item55="14" item56="16" item57="44" item58="46" item59="5" item6="45" item60="15" item61="45" item62="45" item63="44" item64="46" item65="45" item7="4" item8="6" item9="14" meta:length="66" meta:name="cowPositionY"/>
+<array item0="51" item1="40" item10="31" item11="41" item12="20" item13="20" item14="9" item15="51" item16="19" item17="31" item18="41" item19="29" item2="9" item20="30" item3="13" item4="31" item5="40" item6="29" item7="19" item8="29" item9="47" meta:length="21" meta:name="switchX"/>
+<array item0="30" item1="50" item10="30" item11="20" item12="21" item13="50" item14="30" item15="47" item16="30" item17="20" item18="30" item19="20" item2="47" item20="51" item3="51" item4="10" item5="21" item6="10" item7="20" item8="30" item9="51" meta:length="21" meta:name="switchY"/>
+<array item0="8" item1="9" item10="8" item11="8" item12="9" item13="9" item14="8" item15="9" item16="8" item17="8" item18="8" item19="8" item2="9" item20="9" item3="9" item4="8" item5="9" item6="8" item7="8" item8="8" item9="9" meta:length="21" meta:name="fenceLength"/>
+<array item0="right" item1="left" item10="right" item11="right" item12="down" item13="right" item14="left" item15="right" item16="left" item17="right" item18="right" item19="left" item2="left" item20="down" item3="down" item4="right" item5="down" item6="left" item7="left" item8="left" item9="down" meta:length="21" meta:name="fenceDirections"/>
+</configuration>
+<agents>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+</agents>
+</simulation>
+</match>
+
+&accounts;
+</conf>

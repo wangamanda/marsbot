@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE conf SYSTEM "helpers/2013/config.dtd">
+
+<conf>
+	&sim-server;
+	<match>
+		&contest1;
+		&contest2;
+		&contest3;
+	</match>
+        <manual-mode>
+		<match team1="AiWXX" team2="GOAL-DTU"/>
+		<match team1="TUB" team2="LTI-USP"/>
+		<match team1="AiWXX" team2="UFSC"/>
+		<match team1="GOAL-DTU" team2="LTI-USP"/>
+		<match team1="UFSC" team2="TUB"/>
+       	</manual-mode>	
+	<accounts>
+		&actionclassmap;
+		
+		&teamUFSC;
+		&teamLTI-USP;
+		&teamTUB;
+		&teamAiWXX;
+		&teamGOAL-DTU;
+	</accounts>
+</conf>

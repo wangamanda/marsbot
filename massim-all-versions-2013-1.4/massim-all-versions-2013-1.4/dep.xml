@@ -1,0 +1,219 @@
+<assembly>
+  <id>bin</id>
+  <formats>
+    <!--format>tar.gz</format-->
+    <!--format>tar.bz2</format-->
+    <format>zip</format>
+  </formats>
+  <fileSets>
+
+    <!-- CHANGELOG -->
+     <fileSet>
+      <directory>documents/</directory>
+      <outputDirectory></outputDirectory>
+      <includes>
+        <include>CHANGELOG</include>
+      </includes>
+    </fileSet>
+
+    <!-- Documentation -->
+     <fileSet>
+      <directory>documents/2013</directory>
+      <outputDirectory>documents</outputDirectory>
+      <includes>
+        <include>*.txt</include>
+      </includes>
+    </fileSet>
+
+     <fileSet>
+      <directory>documents/2013</directory>
+      <outputDirectory>documents</outputDirectory>
+      <includes>
+        <include>*.pdf</include>
+      </includes>
+    </fileSet>
+
+
+    <!-- Documentation -->
+     <!-- obsolete
+     <fileSet>
+      <directory>documents/2013/massim-server</directory>
+      <outputDirectory>documents</outputDirectory>
+      <includes>
+        <include>*.pdf</include>
+      </includes>
+    </fileSet>
+    <fileSet>
+      <directory>documents/2013/readmefirst</directory>
+      <outputDirectory>documents</outputDirectory>
+      <includes>
+        <include>*.pdf</include>
+      </includes>
+    </fileSet>
+    <fileSet>
+      <directory>documents/2013/scenario</directory>
+      <outputDirectory>documents</outputDirectory>
+      <includes>
+        <include>*.pdf</include>
+      </includes>
+    </fileSet>
+    <fileSet>
+      <directory>documents/2013/protocol</directory>
+      <outputDirectory>documents</outputDirectory>
+      <includes>
+        <include>*.pdf</include>
+      </includes>
+    </fileSet>
+    <fileSet>
+      <directory>documents/2013/javaagents</directory>
+      <outputDirectory>documents</outputDirectory>
+      <includes>
+        <include>*.pdf</include>
+      </includes>
+    </fileSet>
+    <fileSet>
+      <directory>documents/2013/eismassim</directory>
+      <outputDirectory>documents</outputDirectory>
+      <includes>
+        <include>*.pdf</include>
+      </includes>
+    </fileSet>
+    -->
+
+    <!-- MASSim-server -->
+    <fileSet>
+      <directory>massim/target</directory>
+      <outputDirectory>massim/target</outputDirectory>
+      <includes>
+        <include>*.jar</include>
+      </includes>
+    </fileSet>
+    <fileSet>
+      <directory>massim/target/dependency</directory>
+      <outputDirectory>massim/target/dependency</outputDirectory>
+      <includes>
+        <include>*.jar</include>
+      </includes>
+    </fileSet>
+    <fileSet>
+      <directory>massim/scripts</directory>
+      <outputDirectory>massim/scripts</outputDirectory>
+      <includes>
+        <include>startServer.sh</include>
+        <include>startMarsMonitor.sh</include>
+	<include>startMarsFileViewer.sh</include>
+	<include>header.sh</include>
+	<include>server-header.sh</include>
+      </includes>
+      <fileMode>755</fileMode>
+    </fileSet>
+    <fileSet>
+      <directory>massim/scripts/conf</directory>
+      <outputDirectory>massim/scripts/conf</outputDirectory>
+      <includes>
+	      <include>2013-*.xml</include>
+	      <include>helpers/2013/*</include>
+      </includes>
+    </fileSet>
+    <fileSet>
+      <directory>massim/scripts/conf/visualization</directory>
+      <outputDirectory>massim/scripts/conf/visualization</outputDirectory>
+    </fileSet>
+
+    <!-- Java-agents -->
+    <fileSet>
+      <directory>javaagents/target</directory>
+      <outputDirectory>javaagents/target</outputDirectory>
+      <includes>
+        <include>*.jar</include>
+      </includes>
+    </fileSet>
+    <fileSet>
+      <directory>javaagents/target/dependency</directory>
+      <outputDirectory>javaagents/target/dependency</outputDirectory>
+      <includes>
+        <include>*.jar</include>
+      </includes>
+    </fileSet>
+    <fileSet>
+      <directory>javaagents/scripts</directory>
+      <outputDirectory>javaagents/scripts</outputDirectory>
+      <includes>
+        <include>startAgents.sh</include>
+      </includes>
+      <fileMode>755</fileMode>
+    </fileSet>
+    <fileSet>
+      <directory>javaagents/scripts/conf</directory>
+      <outputDirectory>javaagents/scripts/conf</outputDirectory>
+      <excludes>
+	      <exclude>**/dummyteamA/*.xml</exclude>
+	      <exclude>**/dummyteamA</exclude>
+	      <exclude>**/dummyteamB/*.xml</exclude>
+	      <exclude>**/dummyteamB</exclude>
+	      <exclude>**/dummyteamsilent/*.xml</exclude>
+	      <exclude>**/dummyteamsilent</exclude>
+	      <exclude>**/verydummyteamsilent/*.xml</exclude>
+	      <exclude>**/verydummyteamsilent</exclude>
+	      <exclude>**/0815team/*.xml</exclude>
+	      <exclude>**/0815team</exclude>
+	      <exclude>**/dummyteamstatistics/*.xml</exclude>
+	      <exclude>**/dummyteamstatistics</exclude>
+      </excludes>
+      <!--includes>
+        <include>2013*</include>
+      </includes-->
+    </fileSet>
+
+    <!-- EISMASSim -->
+    <fileSet>
+      <directory>eismassim/target</directory>
+      <outputDirectory>eismassim/target</outputDirectory>
+      <includes>
+        <include>*.jar</include>
+      </includes>
+    </fileSet>
+    <fileSet>
+      <directory>eismassim/target/dependency</directory>
+      <outputDirectory>eismassim/target/dependency</outputDirectory>
+      <includes>
+        <include>*.jar</include>
+      </includes>
+    </fileSet>
+
+    <fileSet>
+      <directory>javaagents/scripts/conf/dummyteam</directory>
+      <outputDirectory>eismassim</outputDirectory>
+      <includes>
+        <include>eismassimconfig.xml</include>
+      </includes>
+    </fileSet>
+
+    <!-- Apache Tomcat Webapp-->
+    <fileSet>
+      <directory>webapp/target</directory>
+      <outputDirectory>webapp/target</outputDirectory>
+      <includes>
+	      <include>*.war</include>
+	      <include>*.jar</include>
+      </includes>
+    </fileSet>
+ 
+    <fileSet>
+      <directory>webapp/scripts</directory>
+      <outputDirectory>webapp/scripts</outputDirectory>
+      <includes>
+        <include>installWebserver.sh</include>
+      </includes>
+      <fileMode>755</fileMode>
+    </fileSet>
+    <fileSet>
+      <directory>webapp/webserver</directory>
+      <outputDirectory>webapp/webserver</outputDirectory>
+    </fileSet>
+
+   
+  </fileSets>
+  
+</assembly>
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<config>
+<!-- path needs to be the absolut path -->
+<statistics path="/home/massim/www/webapps/massim/xslt" filename="resultsStylesheetHTML.xslt" />
+
+<server2 path="/home/massim/www/webapps/massim/xslt" filename="connectionStylesheetHTML.xslt" />
+
+<xmlsimulation path="/home/massim/www/webapps/massim/xslt" filename="simulationStylesheetHTML.xslt" />
+
+<server-error path="/home/massim/www/webapps/massim/xslt" filename="connection-error.xslt" />
+
+<simulation-error path="/home/massim/www/webapps/massim/xslt" filename="simulation-error.xslt" />
+
+<statistics-error path="/home/massim/www/webapps/massim/xslt" filename="results-error.xslt" />
+
+</config>

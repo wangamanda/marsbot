@@ -1,0 +1,87 @@
+=================== Call for Submissions =====================
+
+           Multi-Agent Programming Contest 2009
+
+             http://www.multiagentcontest.org
+
+        Tristan Behrens, Mehdi Dastani, JŸrgen Dix
+               Michael Kšster, Peter Novak 
+
+===============================================================
+
+* Aims and Scope:
+
+This competition is an attempt to stimulate research in the area
+of multi-agent system development and programming by
+  1- identifying key problems and
+  2- collecting suitable benchmarks
+that can serve as milestones for testing multi-agent programming
+languages, platforms and tools.
+
+
+* Short scenario description:
+
+It consists of applying (or developing from scratch) a multi-agent
+system to solve a cooperative task in a highly dynamic environment.
+The environment of the multi-agent system is a grid-like world in
+which animals (e.g., cows) are moving around collectively in one or
+more groups showing swarm like behaviour. There are two corrals
+each belongs to one of the agent teams. The teams of agents compete
+to control the behavior of animals and lead them to their own
+corral. The winning agent team is the one that has a higher
+number of cows collected in its corral. The scenario description
+of the scenario will be available soon on the contest webpage.  
+
+
+* Participation requirements:
+
+The participation in this contest consists of two parts:
+1- Submission of the description of analysis, design and
+implementation of a multi-agent system for the above application.
+The maximum length is 5 pages according to the LNCS format.
+2- Participation in the contest tournament by means of an
+(executable) implementation of a multi-agent system.
+Further technical details on how to participate in this contest
+can be found on the contest webpage
+
+     http://www.multiagentcontest.org/
+
+
+* How To Submit: 
+
+Please announce your intention to attend the contest by
+subscribing to the mailing list **now**.
+
+Participants and all interested colleagues are invited to subscribe to
+the mailing list 
+
+     agentcontest2009 [at] in.tu-clausthal.de
+
+All the important details and announcements including scenario and communication
+protocol specifications as well as software release announcements and
+bug reports will be announced and discussed via this list.
+
+To subscribe, send an e-mail to 
+     
+     agentcontest2009-subscribe [at] in.tu-clausthal.de 
+
+with the subject "subscribe". The confirmation request
+and welcome message will be sent to you shortly afterwards. Please
+follow the instructions in the automatic mailing list replies.
+
+Please submit a 5 page description of your solution to Mehdi Dastani using the
+email address
+     
+     mehdi [at] cs.uu.nl
+
+
+* Important Dates:
+
+Publication of the scenario:	  March 30, 2009
+Submission of the description:    April 20, 2009
+Notification:                     April 27, 2009
+Camera-Ready of the description:  May 4, 2009
+Publication of protocol/packages: May 11, 2009
+Testing phase:                    July 13, 2009
+Competition:                      July 20, 2009
+Winner announcement:              July 27, 2009

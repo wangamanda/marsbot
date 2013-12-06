@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE conf SYSTEM "helpers/2010/config.dtd"><!-- launch-sync-type = timer or key--><conf backuppath="backup" launch-sync-type="key" reportpath="./backup/" time-to-launch="10000" tournamentmode="0" tournamentname="GridSimulation">
+<simulation-server><network-agent backlog="10" port="12300"/></simulation-server>
+<match>
+&circlesTwo-contest;
+&spiralsTwo-contest;
+&prairieTwo-contest;
+</match>
+<accounts>
+	<actionclassmap name="Grid">
+		<actionclass class="massim.competition2010.GridSimulationAgentAction" id="action"/>
+		<actionclass class="massim.framework.InvalidAction" id="invalid"/>
+	</actionclassmap>
+	&Argonauts-testserver;
+	&Galoan-testserver;
+	&UCDBogtrotters-testserver;
+</accounts>
+</conf>

@@ -1,0 +1,23 @@
+<!ENTITY accounts SYSTEM "accounts.xml">
+<!ENTITY teamA SYSTEM "teamA.xml">
+<!ENTITY teamB SYSTEM "teamB.xml">
+<!ENTITY demo1 SYSTEM "2010-demo1.xml">
+<!ENTITY demo2 SYSTEM "2010-demo2.xml">
+
+<!ENTITY accounts-testserver SYSTEM "accounts-testserver.xml">
+<!ENTITY demo1-testserver SYSTEM "2010-demo1-testserver.xml">
+<!ENTITY demo2-testserver SYSTEM "2010-demo2-testserver.xml">
+<!ENTITY Argonauts-testserver SYSTEM "Argonauts-testserver.xml">
+<!ENTITY Brainbug-testserver SYSTEM "Brainbug-testserver.xml">
+<!ENTITY CowRaiders-testserver SYSTEM "CowRaiders-testserver.xml">
+<!ENTITY TUCBot-testserver SYSTEM "TUCBot-testserver.xml">
+<!ENTITY Galoan-testserver SYSTEM "Galoan-testserver.xml">
+<!ENTITY Jason-DTU-testserver SYSTEM "Jason-DTU-testserver.xml">
+<!ENTITY PauLo-testserver SYSTEM "PauLo-testserver.xml">
+<!ENTITY UCDBogtrotters-testserver SYSTEM "UCDBogtrotters-testserver.xml">
+<!ENTITY USPFarmers-testserver SYSTEM "USPFarmers-testserver.xml">
+
+<!ENTITY circlesTwo-contest SYSTEM "2010-contest-circlesTwo.xml">
+<!ENTITY prairieTwo-contest SYSTEM "2010-contest-prairieTwo.xml">
+<!ENTITY spiralsTwo-contest SYSTEM "2010-contest-spiralsTwo.xml">
+

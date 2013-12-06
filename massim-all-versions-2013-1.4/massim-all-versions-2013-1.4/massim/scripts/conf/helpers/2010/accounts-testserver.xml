@@ -1,0 +1,16 @@
+<accounts>
+	<actionclassmap name="Grid">
+		<actionclass class="massim.competition2010.GridSimulationAgentAction" id="action"/>
+		<actionclass class="massim.framework.InvalidAction" id="invalid"/>
+	</actionclassmap>
+	&TUCBot-testserver;
+	&Argonauts-testserver;
+	&Brainbug-testserver;
+	&CowRaiders-testserver;
+	&Galoan-testserver;
+	&Jason-DTU-testserver;
+	&PauLo-testserver;
+	&UCDBogtrotters-testserver;
+	&USPFarmers-testserver;
+</accounts>
+

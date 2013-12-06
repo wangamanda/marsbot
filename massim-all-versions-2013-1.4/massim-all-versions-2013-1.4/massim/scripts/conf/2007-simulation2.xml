@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conf backuppath="backup" launch-sync-type="key" reportpath="./" time-to-launch="10000" tournamentmode="0" tournamentname="GridSimulation">
+<simulation-server><network-agent backlog="10" port="12300"/></simulation-server>
+<match>
+&sim2;
+</match>
+&accounts;	
+</conf>

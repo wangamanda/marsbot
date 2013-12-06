@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE conf SYSTEM "helpers/2012/config.dtd">
+
+<conf>
+	&sim-server;
+	<match>
+		&simulation1;
+		&simulation2;
+		&simulation3;
+	</match>
+        <manual-mode>
+<match team1="TUB" team2="Python-DTU"/>
+<match team1="TUB" team2="UFSC"/>
+<match team1="USP" team2="Python-DTU"/>
+<match team1="USP" team2="UFSC"/>       	
+       	</manual-mode>	
+	<accounts>
+		&actionclassmap;	
+		&teamUFSC;
+		&teamUSP;
+		&teamPython-DTU;
+		&teamTUB;
+	</accounts>
+</conf>

@@ -1,0 +1,48 @@
+<simulation 
+  configurationclass="massim.competition2007.GridSimulationConfiguration" 
+  file-simulationlog="./" 
+  id="demo1" 
+  rmiobserver="massim.competition2007.GridSimulationRMIObservers" 
+  rmixmlobserver="massim.competition2007.GridSimulationRMIXMLDocumentObserver" 
+  rmixmlobsserverhost="localhost" 
+  rmixmlobsserverport="1099" 
+  simulationclass="massim.competition2007.GridSimulation" 
+  visualisationobserver="massim.competition2007.GridSimulationVisualizationObserver" 
+  xmlobserver="massim.competition2007.GridSimulationXMLObserver" 
+  xmlobserverpath="./"
+  xmlstatisticsobserver="massim.competition2007.GridSimulationXMLStatisticsObserver">
+
+
+<configuration
+				sizex="30"
+				sizey="30"
+				numberOfObstacles = "60"
+				numberOfGoldItems = "105"
+				maxNumberOfSteps = "100"
+			    maxNumberOfGoldItems = "3"
+				actionFailureProbability = "10"
+				maxActionFailureProbability = "30"
+				informationDistortionProbability = "5"
+				goldGenerationProbability = "80"
+				goldGenerationFrequency = "10"
+				goldGenerationNumber = "2"
+				numberOfAgents = "12"
+				htaccess = "1"
+			/>
+			
+			<agents>
+				<agent agentclass="massim.competition2007.GridSimulationAgent" agentcreationclass="massim.competition2007.GridSimulationAgentParameter" team="red"><configuration/></agent>
+				<agent agentclass="massim.competition2007.GridSimulationAgent" agentcreationclass="massim.competition2007.GridSimulationAgentParameter" team="red"><configuration/></agent>
+				<agent agentclass="massim.competition2007.GridSimulationAgent" agentcreationclass="massim.competition2007.GridSimulationAgentParameter" team="red"><configuration/></agent>
+				<agent agentclass="massim.competition2007.GridSimulationAgent" agentcreationclass="massim.competition2007.GridSimulationAgentParameter" team="red"><configuration/></agent>
+				<agent agentclass="massim.competition2007.GridSimulationAgent" agentcreationclass="massim.competition2007.GridSimulationAgentParameter" team="red"><configuration/></agent>
+				<agent agentclass="massim.competition2007.GridSimulationAgent" agentcreationclass="massim.competition2007.GridSimulationAgentParameter" team="red"><configuration/></agent>
+				<agent agentclass="massim.competition2007.GridSimulationAgent" agentcreationclass="massim.competition2007.GridSimulationAgentParameter" team="blue"><configuration/></agent>
+				<agent agentclass="massim.competition2007.GridSimulationAgent" agentcreationclass="massim.competition2007.GridSimulationAgentParameter" team="blue"><configuration/></agent>
+				<agent agentclass="massim.competition2007.GridSimulationAgent" agentcreationclass="massim.competition2007.GridSimulationAgentParameter" team="blue"><configuration/></agent>
+				<agent agentclass="massim.competition2007.GridSimulationAgent" agentcreationclass="massim.competition2007.GridSimulationAgentParameter" team="blue"><configuration/></agent>
+				<agent agentclass="massim.competition2007.GridSimulationAgent" agentcreationclass="massim.competition2007.GridSimulationAgentParameter" team="blue"><configuration/></agent>
+				<agent agentclass="massim.competition2007.GridSimulationAgent" agentcreationclass="massim.competition2007.GridSimulationAgentParameter" team="blue"><configuration/></agent>
+			</agents>
+    
+</simulation>

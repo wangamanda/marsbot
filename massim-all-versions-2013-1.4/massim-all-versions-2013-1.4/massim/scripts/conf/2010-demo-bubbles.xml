@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE conf SYSTEM "helpers/2010/config.dtd"><!-- launch-sync-type = timer or key--><conf backuppath="backup" launch-sync-type="key" reportpath="./backup/" time-to-launch="10000" tournamentmode="0" tournamentname="GridSimulation">
+<simulation-server><network-agent backlog="10" port="12300"/></simulation-server>
+<match>
+<simulation configurationclass="massim.competition2010.GridSimulationConfigurationHandCrafted" file-simulationlog="./backup/" id="bubbles" rmiobserver="massim.competition2010.GridSimulationRMIObservers" rmixmlobserver="massim.competition2010.GridSimulationRMIXMLDocumentObserver" rmixmlobserverweb="massim.competition2010.GridSimulationRMIXMLDocumentObserverWebInterface" rmixmlobsserverhost="localhost" rmixmlobsserverport="1099" simulationclass="massim.competition2010.GridSimulation" visualisationobserver="massim.competition2010.GridSimulationVisualizationObserver" xmlobserver="massim.competition2010.GridSimulationXMLObserver" xmlobserverpath="./backup/" xmlstatisticsobserver="massim.competition2010.GridSimulationXMLStatisticsObserver">
+<configuration xmlns:meta="http://www.tu-clausthal.de/" agentSpeed="1" agentWeight="-200" cowAttractedWeight="10" cowPrivateField="3" cowScareWeight="-25" cowSight="5" cowSpeed="1" emptyWeight="3" epsilon="3" htaccess="0" lineOfSight="8" maxNumberOfSteps="1000" numberOfAgents="40" numberOfCows="73" numberOfFences="8" numberOfObstacles="504" obstacleWeight="-4" sizex="75" sizey="75">
+<array item0="0" item1="0" item10="0" item100="15" item101="15" item102="15" item103="15" item104="15" item105="15" item106="15" item107="15" item108="15" item109="15" item11="0" item110="15" item111="15" item112="15" item113="15" item114="15" item115="15" item116="15" item117="15" item118="15" item119="15" item12="0" item120="15" item121="15" item122="16" item123="16" item124="16" item125="16" item126="16" item127="17" item128="17" item129="17" item13="0" item130="17" item131="17" item132="17" item133="18" item134="18" item135="18" item136="18" item137="19" item138="19" item139="19" item14="0" item140="19" item141="19" item142="19" item143="19" item144="19" item145="19" item146="19" item147="19" item148="20" item149="20" item15="0" item150="20" item151="20" item152="20" item153="21" item154="21" item155="21" item156="21" item157="22" item158="22" item159="22" item16="0" item160="22" item161="23" item162="23" item163="23" item164="23" item165="23" item166="23" item167="23" item168="23" item169="23" item17="0" item170="23" item171="24" item172="24" item173="24" item174="24" item175="24" item176="24" item177="24" item178="24" item179="24" item18="0" item180="24" item181="24" item182="24" item183="25" item184="25" item185="25" item186="25" item187="25" item188="25" item189="25" item19="0" item190="26" item191="26" item192="26" item193="26" item194="26" item195="26" item196="27" item197="27" item198="27" item199="27" item2="0" item20="0" item200="27" item201="27" item202="28" item203="28" item204="28" item205="28" item206="28" item207="29" item208="29" item209="29" item21="0" item210="29" item211="29" item212="30" item213="30" item214="30" item215="31" item216="31" item217="31" item218="32" item219="32" item22="0" item220="32" item221="32" item222="32" item223="32" item224="32" item225="32" item226="32" item227="32" item228="32" item229="32" item23="0" item230="32" item231="33" item232="33" item233="33" item234="33" item235="34" item236="34" item237="35" item238="35" item239="36" item24="0" item240="36" item241="36" item242="37" item243="37" item244="37" item245="37" item246="37" item247="37" item248="37" item249="37" item25="0" item250="37" item251="37" item252="37" item253="37" item254="37" item255="37" item256="37" item257="37" item258="37" item259="37" item26="1" item260="37" item261="37" item262="38" item263="38" item264="38" item265="39" item266="39" item267="40" item268="40" item269="41" item27="1" item270="41" item271="41" item272="41" item273="42" item274="42" item275="42" item276="42" item277="42" item278="42" item279="42" item28="1" item280="42" item281="42" item282="42" item283="42" item284="42" item285="43" item286="43" item287="43" item288="44" item289="44" item29="1" item290="44" item291="45" item292="45" item293="45" item294="45" item295="45" item296="45" item297="46" item298="46" item299="46" item3="0" item30="1" item300="46" item301="46" item302="47" item303="47" item304="47" item305="47" item306="47" item307="47" item308="48" item309="48" item31="1" item310="48" item311="48" item312="48" item313="48" item314="49" item315="49" item316="49" item317="49" item318="49" item319="49" item32="1" item320="49" item321="50" item322="50" item323="50" item324="50" item325="50" item326="50" item327="50" item328="50" item329="50" item33="2" item330="50" item331="50" item332="50" item333="51" item334="51" item335="51" item336="51" item337="51" item338="51" item339="51" item34="2" item340="51" item341="51" item342="51" item343="52" item344="52" item345="52" item346="52" item347="53" item348="53" item349="53" item35="2" item350="53" item351="54" item352="54" item353="54" item354="54" item355="54" item356="55" item357="55" item358="55" item359="55" item36="2" item360="55" item361="55" item362="55" item363="55" item364="55" item365="55" item366="55" item367="56" item368="56" item369="56" item37="2" item370="56" item371="57" item372="57" item373="57" item374="57" item375="57" item376="57" item377="58" item378="58" item379="58" item38="2" item380="58" item381="58" item382="59" item383="59" item384="59" item385="59" item386="59" item387="59" item388="59" item389="59" item39="3" item390="59" item391="59" item392="59" item393="59" item394="59" item395="59" item396="59" item397="59" item398="59" item399="59" item4="0" item40="3" item400="59" item401="59" item402="59" item403="59" item404="59" item405="60" item406="60" item407="60" item408="60" item409="61" item41="3" item410="61" item411="61" item412="61" item413="62" item414="63" item415="64" item416="64" item417="64" item418="65" item419="65" item42="3" item420="66" item421="66" item422="66" item423="67" item424="67" item425="67" item426="67" item427="67" item428="67" item429="67" item43="3" item430="67" item431="67" item432="68" item433="68" item434="68" item435="68" item436="68" item437="68" item438="68" item439="69" item44="3" item440="69" item441="69" item442="69" item443="69" item444="69" item445="69" item446="69" item447="69" item448="69" item449="69" item45="4" item450="69" item451="69" item452="69" item453="69" item454="70" item455="70" item456="70" item457="70" item458="70" item459="71" item46="4" item460="71" item461="71" item462="71" item463="71" item464="71" item465="72" item466="72" item467="72" item468="72" item469="72" item47="4" item470="72" item471="73" item472="73" item473="73" item474="73" item475="73" item476="73" item477="73" item478="74" item479="74" item48="4" item480="74" item481="74" item482="74" item483="74" item484="74" item485="74" item486="74" item487="74" item488="74" item489="74" item49="4" item490="74" item491="74" item492="74" item493="74" item494="74" item495="74" item496="74" item497="74" item498="74" item499="74" item5="0" item50="5" item500="74" item501="74" item502="74" item503="74" item51="5" item52="5" item53="5" item54="5" item55="5" item56="5" item57="5" item58="5" item59="5" item6="0" item60="5" item61="5" item62="5" item63="5" item64="5" item65="6" item66="6" item67="6" item68="6" item69="6" item7="0" item70="6" item71="6" item72="7" item73="7" item74="7" item75="7" item76="7" item77="7" item78="7" item79="7" item8="0" item80="7" item81="8" item82="8" item83="8" item84="9" item85="9" item86="10" item87="10" item88="10" item89="11" item9="0" item90="12" item91="13" item92="13" item93="13" item94="13" item95="14" item96="14" item97="14" item98="14" item99="15" meta:length="504" meta:name="obstaclePositionX"/>
+<array item0="0" item1="1" item10="10" item100="1" item101="2" item102="3" item103="4" item104="5" item105="6" item106="7" item107="8" item108="9" item109="10" item11="11" item110="11" item111="12" item112="13" item113="14" item114="15" item115="16" item116="19" item117="20" item118="33" item119="34" item12="12" item120="35" item121="36" item122="20" item123="21" item124="32" item125="33" item126="36" item127="21" item128="22" item129="30" item13="13" item130="31" item131="32" item132="36" item133="22" item134="30" item135="36" item136="37" item137="37" item138="38" item139="54" item14="14" item140="55" item141="56" item142="57" item143="58" item144="59" item145="60" item146="61" item147="62" item148="38" item149="39" item15="15" item150="62" item151="63" item152="64" item153="39" item154="40" item155="64" item156="65" item157="40" item158="41" item159="65" item16="16" item160="66" item161="41" item162="42" item163="43" item164="44" item165="45" item166="46" item167="47" item168="48" item169="49" item17="22" item170="66" item171="26" item172="27" item173="28" item174="29" item175="30" item176="31" item177="32" item178="33" item179="34" item18="23" item180="49" item181="66" item182="67" item183="24" item184="25" item185="26" item186="34" item187="35" item188="49" item189="67" item19="24" item190="23" item191="24" item192="35" item193="36" item194="49" item195="67" item196="22" item197="23" item198="36" item199="37" item2="2" item20="25" item200="49" item201="67" item202="22" item203="37" item204="38" item205="49" item206="67" item207="21" item208="22" item209="38" item21="26" item210="49" item211="67" item212="38" item213="49" item214="67" item215="38" item216="49" item217="67" item218="38" item219="40" item22="27" item220="41" item221="42" item222="43" item223="44" item224="45" item225="46" item226="47" item227="48" item228="49" item229="66" item23="28" item230="67" item231="38" item232="39" item233="40" item234="66" item235="65" item236="66" item237="64" item238="65" item239="62" item24="29" item240="63" item241="64" item242="12" item243="13" item244="14" item245="15" item246="16" item247="17" item248="18" item249="19" item25="30" item250="20" item251="21" item252="53" item253="54" item254="55" item255="56" item256="57" item257="58" item258="59" item259="60" item26="0" item260="61" item261="62" item262="10" item263="11" item264="12" item265="9" item266="10" item267="8" item268="9" item269="8" item27="16" item270="33" item271="34" item272="35" item273="7" item274="8" item275="25" item276="26" item277="27" item278="28" item279="29" item28="21" item280="30" item281="31" item282="32" item283="33" item284="35" item285="7" item286="25" item287="35" item288="7" item289="25" item29="22" item290="35" item291="7" item292="25" item293="35" item294="36" item295="52" item296="53" item297="7" item298="25" item299="36" item3="3" item30="30" item300="37" item301="52" item302="7" item303="25" item304="37" item305="38" item306="51" item307="52" item308="7" item309="25" item31="31" item310="38" item311="39" item312="50" item313="51" item314="7" item315="25" item316="39" item317="40" item318="48" item319="49" item32="32" item320="50" item321="7" item322="8" item323="25" item324="40" item325="41" item326="42" item327="43" item328="44" item329="45" item33="0" item330="46" item331="47" item332="48" item333="8" item334="25" item335="26" item336="27" item337="28" item338="29" item339="30" item34="16" item340="31" item341="32" item342="33" item343="8" item344="9" item345="33" item346="34" item347="9" item348="10" item349="34" item35="20" item350="35" item351="10" item352="11" item353="12" item354="35" item355="36" item356="12" item357="13" item358="14" item359="15" item36="21" item360="16" item361="17" item362="18" item363="19" item364="20" item365="36" item366="37" item367="37" item368="38" item369="44" item37="32" item370="52" item371="38" item372="42" item373="43" item374="44" item375="52" item376="53" item377="38" item378="41" item379="42" item38="33" item380="53" item381="54" item382="38" item383="39" item384="40" item385="41" item386="54" item387="55" item388="58" item389="59" item39="0" item390="60" item391="61" item392="62" item393="63" item394="64" item395="65" item396="66" item397="67" item398="68" item399="69" item4="4" item40="16" item400="70" item401="71" item402="72" item403="73" item404="74" item405="55" item406="56" item407="58" item408="74" item409="56" item41="19" item410="57" item411="58" item412="74" item413="74" item414="74" item415="20" item416="21" item417="74" item418="21" item419="74" item42="20" item420="21" item421="22" item422="74" item423="22" item424="23" item425="34" item426="35" item427="36" item428="37" item429="38" item43="33" item430="39" item431="74" item432="23" item433="24" item434="25" item435="33" item436="34" item437="39" item438="74" item439="25" item44="34" item440="26" item441="27" item442="28" item443="29" item444="30" item445="31" item446="32" item447="33" item448="39" item449="40" item45="0" item450="56" item451="57" item452="58" item453="74" item454="40" item455="55" item456="56" item457="58" item458="74" item459="40" item46="16" item460="41" item461="54" item462="55" item463="58" item464="74" item465="41" item466="42" item467="53" item468="54" item469="58" item47="18" item470="74" item471="42" item472="43" item473="44" item474="52" item475="53" item476="58" item477="74" item478="44" item479="45" item48="19" item480="46" item481="47" item482="48" item483="49" item484="50" item485="51" item486="52" item487="58" item488="59" item489="60" item49="34" item490="61" item491="62" item492="63" item493="64" item494="65" item495="66" item496="67" item497="68" item498="69" item499="70" item5="5" item50="0" item500="71" item501="72" item502="73" item503="74" item51="16" item52="17" item53="18" item54="34" item55="35" item56="41" item57="42" item58="43" item59="44" item6="6" item60="45" item61="46" item62="47" item63="48" item64="49" item65="0" item66="35" item67="40" item68="41" item69="49" item7="7" item70="50" item71="51" item72="0" item73="35" item74="36" item75="37" item76="38" item77="39" item78="40" item79="51" item8="8" item80="52" item81="0" item82="52" item83="53" item84="0" item85="53" item86="0" item87="53" item88="54" item89="0" item9="9" item90="0" item91="0" item92="16" item93="17" item94="18" item95="0" item96="16" item97="18" item98="19" item99="0" meta:length="504" meta:name="obstaclePositionY"/>
+<array item0="6" item1="6" item10="9" item11="10" item12="10" item13="10" item14="11" item15="11" item16="11" item17="12" item18="12" item19="12" item2="6" item20="62" item21="62" item22="62" item23="63" item24="63" item25="63" item26="64" item27="64" item28="64" item29="65" item3="7" item30="65" item31="66" item32="66" item33="66" item34="67" item35="67" item36="67" item37="68" item38="68" item39="68" item4="7" item5="7" item6="8" item7="8" item8="8" item9="9" meta:length="40" meta:name="agentPositionX"/>
+<array item0="20" item1="21" item10="25" item11="20" item12="21" item13="22" item14="20" item15="21" item16="22" item17="20" item18="21" item19="22" item2="22" item20="52" item21="53" item22="54" item23="52" item24="53" item25="54" item26="52" item27="53" item28="54" item29="49" item3="20" item30="50" item31="52" item32="53" item33="54" item34="52" item35="53" item36="54" item37="52" item38="53" item39="54" item4="21" item5="22" item6="20" item7="21" item8="22" item9="24" meta:length="40" meta:name="agentPositionY"/>
+<array item0="1" item1="14" meta:length="2" meta:name="stable1X"/>
+<array item0="1" item1="15" meta:length="2" meta:name="stable1Y"/>
+<array item0="60" item1="73" meta:length="2" meta:name="stable2X"/>
+<array item0="59" item1="73" meta:length="2" meta:name="stable2Y"/>
+<array item0="17" item1="17" item10="21" item11="21" item12="22" item13="22" item14="22" item15="23" item16="23" item17="23" item18="34" item19="34" item2="17" item20="34" item21="35" item22="35" item23="35" item24="35" item25="35" item26="35" item27="36" item28="36" item29="36" item3="18" item30="36" item31="36" item32="36" item33="36" item34="37" item35="37" item36="37" item37="37" item38="37" item39="38" item4="18" item40="38" item41="38" item42="38" item43="38" item44="38" item45="38" item46="39" item47="39" item48="39" item49="39" item5="18" item50="39" item51="39" item52="40" item53="40" item54="40" item55="51" item56="51" item57="51" item58="52" item59="52" item6="19" item60="52" item61="53" item62="53" item63="53" item64="55" item65="55" item66="55" item67="56" item68="56" item69="56" item7="19" item70="57" item71="57" item72="57" item8="19" item9="21" meta:length="73" meta:name="cowPositionX"/>
+<array item0="63" item1="64" item10="21" item11="22" item12="20" item13="21" item14="22" item15="20" item16="21" item17="22" item18="12" item19="13" item2="65" item20="14" item21="12" item22="13" item23="14" item24="34" item25="35" item26="36" item27="12" item28="13" item29="14" item3="63" item30="34" item31="35" item32="36" item33="37" item34="34" item35="35" item36="36" item37="37" item38="38" item39="35" item4="64" item40="36" item41="37" item42="38" item43="60" item44="61" item45="62" item46="36" item47="37" item48="38" item49="60" item5="65" item50="61" item51="62" item52="60" item53="61" item54="62" item55="52" item56="53" item57="54" item58="52" item59="53" item6="63" item60="54" item61="52" item62="53" item63="54" item64="9" item65="10" item66="11" item67="9" item68="10" item69="11" item7="64" item70="9" item71="10" item72="11" item8="65" item9="20" meta:length="73" meta:name="cowPositionY"/>
+<array item0="56" item1="18" item2="36" item3="6" item4="68" item5="38" item6="63" item7="11" meta:length="8" meta:name="switchX"/>
+<array item0="51" item1="23" item2="21" item3="16" item4="58" item5="53" item6="20" item7="54" meta:length="8" meta:name="switchY"/>
+<array item0="7" item1="7" item2="7" item3="7" item4="7" item5="7" item6="8" item7="8" meta:length="8" meta:name="fenceLength"/>
+<array item0="up" item1="down" item2="left" item3="right" item4="left" item5="right" item6="left" item7="right" meta:length="8" meta:name="fenceDirections"/>
+</configuration>
+<agents>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="red">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+<agent agentclass="massim.competition2010.GridSimulationAgent" agentcreationclass="massim.competition2010.GridSimulationAgentParameter" team="blue">
+<configuration/>
+</agent>
+</agents>
+</simulation>
+</match>
+<accounts xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/accounts.xml">
+	<actionclassmap name="Grid">
+		<actionclass class="massim.competition2010.GridSimulationAgentAction" id="action"/>
+		<actionclass class="massim.framework.InvalidAction" id="invalid"/>
+	</actionclassmap>
+	<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a1" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a2" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a3" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a4" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a5" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a6" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a7" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a8" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a9" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a10" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a11" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a12" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a13" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a14" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a15" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a16" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a17" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a18" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a19" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="A" timeout="2000" username="a20" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamA.xml"/>
+
+	<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b1" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b2" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b3" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b4" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b5" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b6" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b7" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b8" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b9" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b10" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b11" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b12" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b13" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b14" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b15" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b16" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b17" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b18" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b19" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+<account actionclassmap="Grid" auxtimeout="500" defaultactionclass="massim.competition2010.GridSimulationAgentAction" maxpacketlength="65536" password="1" team="B" timeout="2000" username="b20" xml:base="file:/home/mko/Documents/massim-svn/massim/trunk/massim/scripts/conf/helpers/2010/teamB.xml"/>
+
+</accounts>
+
+
+&accounts;
+</conf>

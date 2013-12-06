@@ -2,12 +2,12 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Users/Pete/Documents/GitHub/marsbot/javaagents-2.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Pete/Documents/GitHub/marsbot/javaagents-2.1-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Pete/Documents/GitHub/marsbot/javaagents-2.1-sources.jar"/>
 	<classpathentry kind="lib" path="apltk-0.1.jar"/>
 	<classpathentry kind="lib" path="eis-0.3.jar"/>
 	<classpathentry kind="lib" path="eismassim-2.1.jar"/>
 	<classpathentry kind="lib" path="junit-4.8.2.jar"/>
+	<classpathentry kind="lib" path="javaagents-2.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="javaagents-2.1-sources.jar"/>
+	<classpathentry kind="lib" path="javaagents-2.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
