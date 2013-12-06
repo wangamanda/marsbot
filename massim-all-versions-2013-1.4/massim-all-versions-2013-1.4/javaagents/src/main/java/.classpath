@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<classpath>
-	<classpathentry excluding="javaeis/" kind="src" path=""/>
-	<classpathentry kind="src" path="javaeis"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="D:/cse431/massim-all-versions-2013-1.4/massim-all-versions-2013-1.4/javaagents/target/dependency/apltk-0.1.jar"/>
-	<classpathentry kind="lib" path="D:/cse431/massim-all-versions-2013-1.4/massim-all-versions-2013-1.4/javaagents/target/dependency/eis-0.3.jar"/>
-	<classpathentry kind="output" path="bin"/>
-</classpath>
