@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE conf SYSTEM "helpers/2013/config.dtd"
+[
+<!ENTITY agents2x10 SYSTEM "helpers/cse431/sim-2x10agents.xml">
+<!ENTITY teamAB SYSTEM "helpers/cse431/accounts-AB10.xml">
+]
+>
+
+<conf>
+	&sim-server;
+	<match>
+	  <simulation
+              id="2013-cse431-2x10"
+		>
+			<configuration
+			    numberOfAgents="20"
+			    maxNumberOfSteps="200"
+			    gridWidth="15"
+			    gridHeight="10"
+			    numberOfNodes="100"
+				thinning="20"
+				randomWeight = "0"
+				gradientWeight = "0"
+				optimaWeight = "100"
+				blurIterations = "8"
+				optimaPercentage = "5">
+			
+			&actions;
+			&roles;	
+			&achievements;
+				
+			</configuration>
+			
+			&agents2x10;
+			
+	  </simulation>
+	</match>
+	
+	<accounts>
+		&actionclassmap;
+		
+		&teamAB;
+	</accounts>
+</conf>
+

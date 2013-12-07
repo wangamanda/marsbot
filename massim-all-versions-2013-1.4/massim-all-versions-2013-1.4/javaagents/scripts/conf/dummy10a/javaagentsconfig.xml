@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<javaAgentsConfig>
+  <agents>
+    <agent name="agentA1" entity="connectionA1" class="massim.javaagents.agents.SimpleExplorerAgent" team="A"/>
+    <agent name="agentA2" entity="connectionA2" class="massim.javaagents.agents.SimpleExplorerAgent" team="A"/>
+    <agent name="agentA3" entity="connectionA3" class="massim.javaagents.agents.SimpleRepairerAgent" team="A"/>
+    <agent name="agentA4" entity="connectionA4" class="massim.javaagents.agents.SimpleRepairerAgent" team="A"/>
+    <agent name="agentA5" entity="connectionA5" class="massim.javaagents.agents.SimpleSaboteurAgent" team="A"/>
+    <agent name="agentA6" entity="connectionA6" class="massim.javaagents.agents.SimpleSaboteurAgent" team="A"/>
+    <agent name="agentA7" entity="connectionA7" class="massim.javaagents.agents.SimpleSentinelAgent" team="A"/>
+    <agent name="agentA8" entity="connectionA8" class="massim.javaagents.agents.SimpleSentinelAgent" team="A"/>
+    <agent name="agentA9" entity="connectionA9" class="massim.javaagents.agents.SimpleInspectorAgent" team="A"/>
+    <agent name="agentA10" entity="connectionA10" class="massim.javaagents.agents.SimpleInspectorAgent" team="A"/>
+  </agents>
+</javaAgentsConfig>

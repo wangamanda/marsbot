@@ -2,7 +2,6 @@
         id="13-testsim1"
 		>
 			<configuration
-				maxNumberOfSteps="750"
 				thinning="20"
 				numberOfNodes="400"
 				randomWeight = "0"
