@@ -2,18 +2,18 @@ package marsbot;
 
 public class Edge
 {
-	Node node1;
-	Node node2;
+	private String node1;
+	private String node2;
 	int weight;
 	
-	public Edge(Node node1, Node node2, int weight)
+	public Edge(String node1, String node2, int weight)
 	{
 		this.node1 = node1;
 		this.node2 = node2;
 		this.weight = weight;
 	}
 	
-	public Edge(Node node1, Node node2)
+	public Edge(String node1, String node2)
 	{
 		this.node1 = node1;
 		this.node2 = node2;
@@ -33,6 +33,7 @@ public class Edge
 			return true;
 		}
 		
-		return ((Edge)obj).node1.id == this.node1.id && ((Edge)obj).node2.id == this.node2.id;
+		return (((Edge)obj).node1.equals(this.node1) && ((Edge)obj).node2.equals(this.node2))
+				|| (((Edge)obj).node1.equals(this.node2) && ((Edge)obj).node2.equals(this.node1)); // this way order doesn't matter
 	}
 }
