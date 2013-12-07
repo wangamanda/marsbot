@@ -14,7 +14,7 @@ import eis.iilang.Percept;
 import massim.javaagents.Agent;
 import massim.javaagents.agents.MarsUtil;
 
-public class SkipAgent extends Agent {
+public class SkipAgent extends AgentWithMap {
 
 	public SkipAgent(String name, String team) {
 		super(name, team);
