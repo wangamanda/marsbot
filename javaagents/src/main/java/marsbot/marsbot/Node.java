@@ -14,6 +14,7 @@ public class Node
 		this.id = id;
 		neighbors = new ArrayList<Node>();
 		visited = false;
+		value = 1;
 	}
 	
 	@Override
