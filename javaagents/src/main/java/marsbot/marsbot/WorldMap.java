@@ -12,7 +12,7 @@ public class WorldMap
 	private HashMap<AgentInfo, Node> allyLocations;
 	private HashMap<AgentInfo, Node> enemyLocations;
 	private HashMap<AgentInfo, Node> desiredLocations;
-	private int lastSynch = -1;
+	private int lastSynch = -1; // this might need to go too
 	
 	public WorldMap()
 	{
@@ -104,7 +104,8 @@ public class WorldMap
 	}
 	
 	// synch the desired positions with the actual positions
-	public void synch(int step)
+	// I'm not convinced we need this
+	private void synch(int step)
 	{
 		if (lastSynch < step)
 		{

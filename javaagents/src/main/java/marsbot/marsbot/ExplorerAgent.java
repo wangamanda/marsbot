@@ -58,8 +58,18 @@ public class ExplorerAgent extends AgentWithMap {
 		for ( Percept p : percepts ) {
 			if ( p.getName().equals("step") ) {
 				println(p);
+				step = Integer.parseInt(p.getSource());
 			}
-			else if ( p.getName().equals("visibleEdge") ) {
+			else if ( p.getName().equals("visibleEntity") ) {
+				LogicBelief b = MarsUtil.perceptToBelief(p);
+				if ( containsBelief(b) == false ) {
+					addBelief(b);
+				}
+				else {
+				}
+			}
+			else if ( p.getName().equals("visibleEdge") ) 
+			{
 				LogicBelief b = MarsUtil.perceptToBelief(p);
 				if (containsBelief(b) == false)
 				{
@@ -80,7 +90,37 @@ public class ExplorerAgent extends AgentWithMap {
 				node1.addNeighbor(node2);
 				node2.addNeighbor(node1);
 			}
-			else if ( p.getName().equals("position") ) 
+			else if ( p.getName().equals("probedVertex") ) {
+				LogicBelief b = MarsUtil.perceptToBelief(p);
+				if ( containsBelief(b) == false ) {
+					println("I perceive the value of a vertex that I have not known before");
+					addBelief(b);
+					broadcastBelief(b);
+				}
+				else {
+					//println("I already knew " + b);
+				}
+			}
+			else if ( p.getName().equals("surveyedEdge") ) {
+				LogicBelief b = MarsUtil.perceptToBelief(p);
+				if ( containsBelief(b) == false ) {
+					println("I perceive the weight of an edge that I have not known before");
+					addBelief(b);
+					broadcastBelief(b);
+				}
+				else {
+					//println("I already knew " + b);
+				}
+			}
+			else if ( p.getName().equals("health")) {
+				Integer health = new Integer(p.getParameters().get(0).toString());
+				println("my health is " +health );
+				if ( health.intValue() == 0 ) {
+					println("my health is zero. asking for help");
+					broadcastBelief(new LogicBelief("iAmDisabled"));
+				}
+			}
+			else if (p.getName().equals("position")) 
 			{
 				position = p.getParameters().get(0).toString();
 				removeBeliefs("position");
@@ -89,6 +129,8 @@ public class ExplorerAgent extends AgentWithMap {
 				// update the visited status of this node
 				Node n = worldMap.add(new Node(position));
 				n.markVisited();
+				// TODO: update location map
+				worldMap.setAgentLocation(name, n.getId());
 			}
 			else if ( p.getName().equals("energy") ) {
 				Integer energy = new Integer(p.getParameters().get(0).toString());
@@ -99,6 +141,14 @@ public class ExplorerAgent extends AgentWithMap {
 				Integer maxEnergy = new Integer(p.getParameters().get(0).toString());
 				removeBeliefs("maxEnergy");
 				addBelief(new LogicBelief("maxEnergy",maxEnergy.toString()));
+			}
+			else if ( p.getName().equals("money") ) {
+				Integer money = new Integer(p.getParameters().get(0).toString());
+				removeBeliefs("money");
+				addBelief(new LogicBelief("money",money.toString()));
+			}
+			else if ( p.getName().equals("achievement") ) {
+				println("reached achievement " + p);
 			}
 		}
 		
@@ -176,6 +226,7 @@ public class ExplorerAgent extends AgentWithMap {
 		{
 			if (!n.hasBeenVisited())
 			{
+				worldMap.setAgentDesiredLocation(name, n.getId());
 				return MarsUtil.gotoAction(n.getId());
 			}
 		}
