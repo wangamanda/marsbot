@@ -23,4 +23,20 @@ public class AgentInfo
 		return team;
 	}
 	
+	@Override
+	public boolean equals(Object obj)
+	{
+		if (!(obj instanceof AgentInfo))
+		{
+			return false;
+		}
+		
+		if (this == obj)
+		{
+			return true;
+		}
+		
+		return ((AgentInfo)obj).id.equals(this.id);
+	}
+	
 }
