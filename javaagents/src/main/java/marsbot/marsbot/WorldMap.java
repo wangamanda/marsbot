@@ -2,16 +2,25 @@ package marsbot;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map.Entry;
 
 public class WorldMap 
 {
 	private HashMap<String, Node> nodeMap;
 	private ArrayList<Edge> edgeList;
+	private HashMap<String, AgentInfo> agentMap;
+	private HashMap<AgentInfo, Node> allyLocations;
+	private HashMap<AgentInfo, Node> enemyLocations;
+	private HashMap<AgentInfo, Node> desiredLocations;
+	private int lastSynch = -1;
 	
 	public WorldMap()
 	{
 		nodeMap = new HashMap<String, Node>();
 		edgeList = new ArrayList<Edge>();
+		agentMap = new HashMap<String, AgentInfo>();
+		allyLocations = new HashMap<AgentInfo, Node>();
+		desiredLocations = new HashMap<AgentInfo, Node>();
 	}
 	
 	// if the node is already in the list, the existing node will be returned
@@ -54,5 +63,57 @@ public class WorldMap
 			e = edgeList.get(edgeList.indexOf(e));
 		}
 		return e;
+	}
+	
+	public AgentInfo add(AgentInfo a)
+	{
+		if (!agentMap.containsKey(a.getId()))
+		{
+			agentMap.put(a.getId(), a);
+		}
+		else
+		{
+			a = agentMap.get(a.getId());
+		}
+		return a;
+	}
+	
+	public void setAgentLocation(String agentId, String nodeId)
+	{
+		
+	}
+	
+	public void setAgentDesiredLocation(String agentId, String nodeId)
+	{
+		
+	}
+	
+	public HashMap<AgentInfo, Node> getAlliedPositions()
+	{
+		return null;
+	}
+	
+	public HashMap<AgentInfo, Node> getEnemyPositions()
+	{
+		return null;
+	}
+	
+	public HashMap<AgentInfo, Node> getDesiredPositions()
+	{
+		return null;
+	}
+	
+	// synch the desired positions with the actual positions
+	public void synch(int step)
+	{
+		if (lastSynch < step)
+		{
+			desiredLocations = new HashMap<AgentInfo, Node>();
+			for (Entry<AgentInfo, Node> s : allyLocations.entrySet())
+			{
+				desiredLocations.put(s.getKey(), s.getValue());
+			}
+			lastSynch = step;
+		}
 	}
 }
