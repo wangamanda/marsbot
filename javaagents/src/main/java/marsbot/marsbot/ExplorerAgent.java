@@ -181,7 +181,7 @@ public class ExplorerAgent extends AgentWithMap {
 		}
 
 		println("all neighbors visited " + currentNode.getNeighbors().size());
-		return MarsUtil.skipAction();
+		return MarsUtil.skipAction(); // yay comment
 		
 	}
 
