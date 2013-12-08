@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path=""/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/Marsbot/apltk-0.1.jar"/>
+	<classpathentry kind="lib" path="/Marsbot/eis-0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/xinwa_000/Documents/GitHub/marsbot/massim-all-versions-2013-1.4/massim-all-versions-2013-1.4/javaagents/target/dependency/apltk-0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/xinwa_000/Documents/GitHub/marsbot/massim-all-versions-2013-1.4/massim-all-versions-2013-1.4/javaagents/target/dependency/eis-0.3.jar"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

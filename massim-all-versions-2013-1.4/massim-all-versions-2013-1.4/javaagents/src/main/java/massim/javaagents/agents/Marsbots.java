@@ -9,17 +9,20 @@ public class Marsbots extends Agent{
 
 	public Marsbots(String name, String team) {
 		super(name, team);
+		System.out.print("************************");
 		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public Action step() {
 		// TODO Auto-generated method stub
-		return null;
+		System.out.print("************************");
+		return MarsUtil.skipAction();
 	}
 
 	@Override
 	public void handlePercept(Percept p) {
+		System.out.print("************************");
 		// TODO Auto-generated method stub
 		
 	}
