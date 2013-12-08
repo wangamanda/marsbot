@@ -3,6 +3,8 @@ package marsbot;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.LinkedList;
+import java.util.Vector;
+import java.util.concurrent.TimeUnit;
 
 import massim.javaagents.agents.MarsUtil;
 import apltk.interpreter.data.LogicBelief;
@@ -29,6 +31,11 @@ public class ExplorerAgent extends AgentWithMap {
 			act = planNextNodeToVisit();
 		}
 		
+		try {
+		    Thread.sleep(100);
+		} catch(InterruptedException ex) {
+		    Thread.currentThread().interrupt();
+		}
 		return act;
 	}
 
@@ -167,12 +174,13 @@ public class ExplorerAgent extends AgentWithMap {
 		Node currentNode = worldMap.getNode(position);
 		for (Node n : currentNode.getNeighbors())
 		{
-			if (!n.getVisited())
+			if (!n.hasBeenVisited())
 			{
 				return MarsUtil.gotoAction(n.getId());
 			}
 		}
 
+		println("all neighbors visited " + currentNode.getNeighbors().size());
 		return MarsUtil.skipAction();
 		
 	}

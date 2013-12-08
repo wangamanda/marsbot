@@ -53,7 +53,7 @@ public class Node
 		return id;
 	}
 		
-	public boolean getVisited()
+	public boolean hasBeenVisited()
 	{
 		return visited;
 	}
