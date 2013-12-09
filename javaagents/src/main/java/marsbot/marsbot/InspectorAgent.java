@@ -88,16 +88,27 @@ private void handleMessages() {
 					println("I already knew entity:" + b);
 				}
 			}
-			else if ( p.getName().equals("visibleEdge") ) {
+			else if ( p.getName().equals("visibleEdge") ) 
+			{
 				LogicBelief b = MarsUtil.perceptToBelief(p);
-				if ( containsBelief(b) == false ) {
-					println("I perceive an edge I have not known before");
+				if (containsBelief(b) == false)
+				{
 					addBelief(b);
-					broadcastBelief(b);
 				}
-				else {
-					println("I already knew edge:" + b);
-				}
+				
+				// add newly discovered edges and nodes to the graph
+				Node node1 = new Node(p.getParameters().get(0).toString());
+				Node node2 = new Node(p.getParameters().get(1).toString());
+				Edge e = new Edge(node1.getId(), node2.getId());
+				worldMap.add(e);
+				
+				// add the nodes to the world map, if they are already there, this will return the existing object
+				node1 = worldMap.add(node1);
+				node2 = worldMap.add(node2);
+				
+				// update the neighbor list of the nodes
+				node1.addNeighbor(node2);
+				node2.addNeighbor(node1);
 			}
 			else if ( p.getName().equals("inspectedEntity") ) {
 				println("I have perceived an inspected entity " + p);
@@ -283,6 +294,7 @@ private void handleMessages() {
 		for (String ne : neighbors){
 			Node n = worldMap.getNode(ne);
 			if ( n == null){
+				
 				return MarsUtil.gotoAction(ne);
 			}
 			
@@ -300,6 +312,5 @@ private void handleMessages() {
 		return MarsUtil.gotoAction(neighbor);
 		
 	}
-
 
 }
