@@ -22,11 +22,12 @@ public class SkipAgent extends AgentWithMap {
 
 	@Override
 	public void handlePercept(Percept p) {
+		System.out.print("*********handlepercept************");
 	}
 
 	@Override
 	public Action step() {
-
+		System.out.print("*********step************");
 		return MarsUtil.skipAction();
 		
 	}
@@ -152,6 +153,7 @@ public class SkipAgent extends AgentWithMap {
 					addBelief(new LogicBelief("neighbor",vertex1));
 			}
 		}	
+		
 	}
 
 	private Action planRecharge() {
@@ -315,6 +317,7 @@ public class SkipAgent extends AgentWithMap {
 	 */
 	private Action planBuyBattery() {
 		
+		
 		LinkedList<LogicBelief> beliefs = this.getAllBeliefs("money");
 		if ( beliefs.size() == 0 ) {
 			println("strangely I do not know our money.");
@@ -359,7 +362,7 @@ public class SkipAgent extends AgentWithMap {
 		String neighbor = neighbors.firstElement();
 		println("I will go to " + neighbor);
 		return MarsUtil.gotoAction(neighbor);
-		
+
 	}
 
 }

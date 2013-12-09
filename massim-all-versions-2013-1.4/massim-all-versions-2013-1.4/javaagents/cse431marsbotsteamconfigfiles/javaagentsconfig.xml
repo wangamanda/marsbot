@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<javaAgentsConfig>
+  <agents>
+    <agent name="agentMB1" entity="connectionMB1" class="SkipAgent" team="Marsbots"/>
+    <agent name="agentMB2" entity="connectionMB2" class="SkipAgent" team="Marsbots"/>
+    <agent name="agentMB3" entity="connectionMB3" class="SkipAgent" team="Marsbots"/>
+    <agent name="agentMB4" entity="connectionMB4" class="SkipAgent" team="Marsbots"/>
+    <agent name="agentMB5" entity="connectionMB5" class="SkipAgent" team="Marsbots"/>
+    <agent name="agentMB6" entity="connectionMB6" class="SkipAgent" team="Marsbots"/>
+    <agent name="agentMB7" entity="connectionMB7" class="SkipAgent" team="Marsbots"/>
+    <agent name="agentMB8" entity="connectionMB8" class="SkipAgent" team="Marsbots"/>
+    <agent name="agentMB9" entity="connectionMB9" class="SkipAgent" team="Marsbots"/>
+    <agent name="agentMB10" entity="connectionMB10" class="SkipAgent" team="Marsbots"/>
+  </agents>
+</javaAgentsConfig>
