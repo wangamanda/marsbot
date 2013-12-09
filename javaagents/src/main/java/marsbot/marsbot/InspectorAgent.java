@@ -40,7 +40,11 @@ public class InspectorAgent extends AgentWithMap{
 		act = planInspect();
 		if ( act != null ) return act;
 		
-		// 4. (almost) random walking
+		// 4. survey if necessary
+				act = planSurvey();
+				if ( act != null ) return act;
+		
+		// 5. (almost) random walking
 		act = planWalk();
 		if ( act != null ) return act;
 
@@ -200,8 +204,6 @@ private void handleMessages() {
 				println("strangely I do not know my maxEnergy");
 				return MarsUtil.skipAction();
 		}
-		
-
 		int maxEnergy = new Integer(beliefs.getFirst().getParameters().firstElement()).intValue();
 
 		// if has the goal of being recharged...
@@ -311,12 +313,80 @@ private void handleMessages() {
 		
 	}
 
+	private Action planSurvey() {
+
+		println("I know " + getAllBeliefs("visibleEdge").size() + " visible edges");
+		println("I know " + getAllBeliefs("surveyedEdge").size() + " surveyed edges");
+
+		// get all neighbors
+		LinkedList<LogicBelief> visible = getAllBeliefs("visibleEdge");
+		LinkedList<LogicBelief> surveyed = getAllBeliefs("surveyedEdge");
+
+		String position = getAllBeliefs("position").get(0).getParameters().firstElement();
+		
+		int unsurveyedNum = 0;
+		int adjacentNum = 0;
+		
+		for ( LogicBelief v : visible ) {
+		
+			String vVertex0 = v.getParameters().elementAt(0);
+			String vVertex1 = v.getParameters().elementAt(1);
+
+			boolean adjacent = false;
+			if ( vVertex0.equals(position) || vVertex1.equals(position) )
+				adjacent = true;
+			
+			if ( adjacent == false) continue;
+			adjacentNum ++;
+			
+			boolean isSurveyed = false;
+			for ( LogicBelief s : surveyed ) {
+				String sVertex0 = s.getParameters().elementAt(0);
+				String sVertex1 = s.getParameters().elementAt(1);
+				if ( sVertex0.equals(vVertex0) &&  sVertex1.equals(vVertex1) ) {
+					isSurveyed = true;
+					break;
+				}
+				if ( sVertex0.equals(vVertex1) &&  sVertex1.equals(vVertex0) ) {
+					isSurveyed = true;
+					break;
+				}
+			}
+			if ( isSurveyed == false ) unsurveyedNum ++;
+			
+		}
+
+		println("" + unsurveyedNum + " out of " + adjacentNum + " adjacent edges are unsurveyed");
+		
+		if ( unsurveyedNum > 0 ) {
+			println("I will survey");
+			return MarsUtil.surveyAction();
+		}
+		
+		return null;
+		
+	}
+	
 	private Action planWalk() {
 
 		LinkedList<LogicBelief> beliefs = getAllBeliefs("neighbor");
 		Vector<String> neighbors = new Vector<String>();
 		for ( LogicBelief b : beliefs ) {
 			neighbors.add(b.getParameters().firstElement());
+		}
+		if ( beliefs.size() == 0 ) {
+			println("strangely I do not know my position");
+			return MarsUtil.skipAction();
+		}
+	String position = beliefs.getFirst().getParameters().firstElement();
+		Node currentNode = worldMap.getNode(position);
+		for (Node n : currentNode.getNeighbors())
+		{
+			if (!n.hasBeenVisited())
+			{
+				worldMap.setAgentDesiredLocation(name, n.getId());
+				return MarsUtil.gotoAction(n.getId());
+			}
 		}
 		for (String ne : neighbors){
 			Node n = worldMap.getNode(ne);
