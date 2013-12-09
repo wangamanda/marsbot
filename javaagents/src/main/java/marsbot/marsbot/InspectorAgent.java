@@ -36,18 +36,19 @@ public class InspectorAgent extends AgentWithMap{
 		act = planBuyBattery();
 		if ( act != null ) return act;
 
-		// 3. inspecting if necessary
-		act = planInspect();
-		if ( act != null ) return act;
 		
 		// 4. survey if necessary
 				act = planSurvey();
 				if ( act != null ) return act;
 		
-		// 5. (almost) random walking
+		// 5. plan walking
 		act = planWalk();
 		if ( act != null ) return act;
 
+		// 3. inspecting if necessary
+				act = planInspect();
+				if ( act != null ) return act;
+				
 		return MarsUtil.skipAction();
 	}
 
@@ -219,7 +220,7 @@ private void handleMessages() {
 		}
 		// go to recharge mode if necessary
 		else {
-			if ( energy < maxEnergy / 3 ) {
+			if ( energy < maxEnergy / 4 ) {
 				println("I need to recharge");
 				goals.add(new LogicGoal("beAtFullCharge"));
 				return MarsUtil.rechargeAction();
@@ -308,8 +309,9 @@ private void handleMessages() {
 			return MarsUtil.inspectAction();
 		}
 
-		println("I won't inspect");
-		return null;
+		println("I will confuse you");
+		
+		return MarsUtil.inspectAction();
 		
 	}
 
@@ -378,6 +380,7 @@ private void handleMessages() {
 			println("strangely I do not know my position");
 			return MarsUtil.skipAction();
 		}
+		
 	String position = beliefs.getFirst().getParameters().firstElement();
 		Node currentNode = worldMap.getNode(position);
 		for (Node n : currentNode.getNeighbors())
