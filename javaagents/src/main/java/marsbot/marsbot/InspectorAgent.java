@@ -110,6 +110,28 @@ private void handleMessages() {
 				node1.addNeighbor(node2);
 				node2.addNeighbor(node1);
 			}
+			else if ( p.getName().equals("probedVertex") ) {
+				LogicBelief b = MarsUtil.perceptToBelief(p);
+				if ( containsBelief(b) == false ) {
+					println("I perceive the value of a vertex that I have not known before");
+					addBelief(b);
+					broadcastBelief(b);
+				}
+				else {
+					//println("I already knew " + b);
+				}
+			}
+			else if ( p.getName().equals("surveyedEdge") ) {
+				LogicBelief b = MarsUtil.perceptToBelief(p);
+				if ( containsBelief(b) == false ) {
+					println("I perceive the weight of an edge that I have not known before");
+					addBelief(b);
+					broadcastBelief(b);
+				}
+				else {
+					//println("I already knew " + b);
+				}
+			}
 			else if ( p.getName().equals("inspectedEntity") ) {
 				println("I have perceived an inspected entity " + p);
 			}
@@ -125,6 +147,11 @@ private void handleMessages() {
 				position = p.getParameters().get(0).toString();
 				removeBeliefs("position");
 				addBelief(new LogicBelief("position",position));
+				// update the visited status of this node
+				Node n = worldMap.add(new Node(position));
+				n.markVisited();
+				// TODO: update location map
+				worldMap.setAgentLocation(name, n.getId());
 			}
 			else if ( p.getName().equals("energy") ) {
 				Integer energy = new Integer(p.getParameters().get(0).toString());
