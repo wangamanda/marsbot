@@ -13,7 +13,7 @@ import eis.iilang.Percept;
 import massim.javaagents.Agent;
 import massim.javaagents.agents.MarsUtil;
 
-public class InspectorAgent extends Agent{
+public class InspectorAgent extends AgentWithMap{
 
 	public InspectorAgent(String name, String team) {
 		super(name, team);
@@ -41,7 +41,7 @@ public class InspectorAgent extends Agent{
 		if ( act != null ) return act;
 		
 		// 4. (almost) random walking
-		act = planRandomWalk();
+		act = planWalk();
 		if ( act != null ) return act;
 
 		return MarsUtil.skipAction();
@@ -273,12 +273,19 @@ private void handleMessages() {
 		
 	}
 
-	private Action planRandomWalk() {
+	private Action planWalk() {
 
 		LinkedList<LogicBelief> beliefs = getAllBeliefs("neighbor");
 		Vector<String> neighbors = new Vector<String>();
 		for ( LogicBelief b : beliefs ) {
 			neighbors.add(b.getParameters().firstElement());
+		}
+		for (String ne : neighbors){
+			Node n = worldMap.getNode(ne);
+			if ( n == null){
+				return MarsUtil.gotoAction(ne);
+			}
+			
 		}
 		
 		if ( neighbors.size() == 0 ) {
