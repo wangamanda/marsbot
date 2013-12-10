@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interfaceConfig scenario="mars2013" host="localhost" port="12300" scheduling="yes" times="no" notifications="no" queued="no" statisticsFile="no" statisticsShell="no" submitStatistic="no">
   <entities>
-    <entity name="connectionA1" username="a1" password="1" iilang="yes" xml="yes"/>
-    <entity name="connectionA2" username="a2" password="1" iilang="yes" xml="yes"/>
-    <entity name="connectionA3" username="a3" password="1" iilang="yes" xml="yes"/>
-    <entity name="connectionA4" username="a4" password="1" iilang="yes" xml="yes"/>
-    <entity name="connectionA5" username="a5" password="1" iilang="yes" xml="yes"/>
-    <entity name="connectionA6" username="a6" password="1" iilang="yes" xml="yes"/>
-    <entity name="connectionA7" username="a7" password="1" iilang="yes" xml="yes"/>
-    <entity name="connectionA8" username="a8" password="1" iilang="yes" xml="yes"/>
-    <entity name="connectionA9" username="a9" password="1" iilang="yes" xml="yes"/>
-    <entity name="connectionA10" username="a10" password="1" iilang="yes" xml="yes"/>
+    <entity name="connectionMB1" username="mb1" password="nash" iilang="yes" xml="yes"/>
+    <entity name="connectionMB2" username="mb2" password="nash" iilang="yes" xml="yes"/>
+    <entity name="connectionMB3" username="mb3" password="nash" iilang="yes" xml="yes"/>
+    <entity name="connectionMB4" username="mb4" password="nash" iilang="yes" xml="yes"/>
+    <entity name="connectionMB5" username="mb5" password="nash" iilang="yes" xml="yes"/>
+    <entity name="connectionMB6" username="mb6" password="nash" iilang="yes" xml="yes"/>
+    <entity name="connectionMB7" username="mb7" password="nash" iilang="yes" xml="yes"/>
+    <entity name="connectionMB8" username="mb8" password="nash" iilang="yes" xml="yes"/>
+    <entity name="connectionMB9" username="mb9" password="nash" iilang="yes" xml="yes"/>
+    <entity name="connectionMB10" username="mb10" password="nash" iilang="yes" xml="yes"/>
   </entities>
 </interfaceConfig>

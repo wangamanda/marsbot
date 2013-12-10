@@ -1,26 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <javaAgentsConfig>
   <agents>
-    <agent name="agentA1" entity="connectionA1" class="massim.javaagents.agents.SimpleExplorerAgent" team="A"/>
-    <agent name="agentA2" entity="connectionA2" class="massim.javaagents.agents.SimpleExplorerAgent" team="A"/>
-    <agent name="agentA3" entity="connectionA3" class="massim.javaagents.agents.SimpleRepairerAgent" team="A"/>
-    <agent name="agentA4" entity="connectionA4" class="massim.javaagents.agents.SimpleRepairerAgent" team="A"/>
-    <agent name="agentA5" entity="connectionA5" class="massim.javaagents.agents.SimpleSaboteurAgent" team="A"/>
-    <agent name="agentA6" entity="connectionA6" class="massim.javaagents.agents.SimpleSaboteurAgent" team="A"/>
-    <agent name="agentA7" entity="connectionA7" class="massim.javaagents.agents.SimpleSentinelAgent" team="A"/>
-    <agent name="agentA8" entity="connectionA8" class="massim.javaagents.agents.SimpleSentinelAgent" team="A"/>
-    <agent name="agentA9" entity="connectionA9" class="massim.javaagents.agents.SimpleInspectorAgent" team="A"/>
-    <agent name="agentA10" entity="connectionA10" class="massim.javaagents.agents.SimpleInspectorAgent" team="A"/>
-	
-    <agent name="agentB1" entity="connectionB1" class="marsbot.SkipAgent" team="B"/>
-    <agent name="agentB2" entity="connectionB2" class="marsbot.SkipAgent" team="B"/>
-    <agent name="agentB3" entity="connectionB3" class="marsbot.SkipAgent" team="B"/>
-    <agent name="agentB4" entity="connectionB4" class="marsbot.SkipAgent" team="B"/>
-    <agent name="agentB5" entity="connectionB5" class="marsbot.SkipAgent" team="B"/>
-    <agent name="agentB6" entity="connectionB6" class="marsbot.SkipAgent" team="B"/>
-    <agent name="agentB7" entity="connectionB7" class="marsbot.SkipAgent" team="B"/>
-    <agent name="agentB8" entity="connectionB8" class="marsbot.SkipAgent" team="B"/>
-    <agent name="agentB9" entity="connectionB9" class="marsbot.SkipAgent" team="B"/>
-    <agent name="agentB10" entity="connectionB10" class="marsbot.SkipAgent" team="B"/>
+    <agent name="agentMB1" entity="connectionMB1" class="marsbot.ExplorerAgent" team="Marsbots"/>
+    <agent name="agentMB2" entity="connectionMB2" class="marsbot.ExplorerAgent" team="Marsbots"/>
+    <agent name="agentMB3" entity="connectionMB3" class="marsbot.InspectorAgent" team="Marsbots"/>
+    <agent name="agentMB4" entity="connectionMB4" class="marsbot.InspectorAgent" team="Marsbots"/>
+    <agent name="agentMB5" entity="connectionMB5" class="marsbot.SkipAgent" team="Marsbots"/>
+    <agent name="agentMB6" entity="connectionMB6" class="marsbot.SkipAgent" team="Marsbots"/>
+    <agent name="agentMB7" entity="connectionMB7" class="marsbot.SkipAgent" team="Marsbots"/>
+    <agent name="agentMB8" entity="connectionMB8" class="marsbot.SkipAgent" team="Marsbots"/>
+    <agent name="agentMB9" entity="connectionMB9" class="marsbot.SkipAgent" team="Marsbots"/>
+    <agent name="agentMB10" entity="connectionMB10" class="marsbot.SkipAgent" team="Marsbots"/>
   </agents>
 </javaAgentsConfig>
